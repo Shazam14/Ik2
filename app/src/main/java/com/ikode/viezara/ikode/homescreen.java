@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Typeface;
+import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.text.Spannable;
@@ -13,16 +14,18 @@ import android.text.method.LinkMovementMethod;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.StyleSpan;
 import android.view.View;
+import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageButton;
+import android.widget.PopupWindow;
 import android.widget.TextView;
 
 public class homescreen extends AppCompatActivity {
 
     private Button REGISTER_BTN;
     private Button SCAN_BTN;
-    private ImageButton LOGIN_BTN;
+    private ImageButton LOGIN_BTN, popup_btn;
     private TextView HELP;
     private TextView ABOUT;
     private CheckBox REGISTER_BOX;
@@ -31,10 +34,22 @@ public class homescreen extends AppCompatActivity {
     private SharedPreferences SP;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_homescreen);
+
+        popup_btn = (ImageButton) findViewById(R.id.popInfo);
+
+        popup_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                startActivity(new Intent(homescreen.this, RegInfo.class));
+                displayPopupWindow(v);
+            }
+
+        });
 
         ikonalicense = (TextView) findViewById(R.id.ikonalicensetext);
         SpannableString ikltext = new SpannableString("licensed by Ikona®");
@@ -93,7 +108,10 @@ public class homescreen extends AppCompatActivity {
                     SharedPreferences.Editor editor = SP.edit();
                     editor.clear();
                     editor.commit();
-                    onRestart();
+                    //onRestart();
+                    int id = android.os.Process.myPid();
+                    android.os.Process.killProcess(id);
+                    finish();
 
                 }
             });
@@ -124,6 +142,9 @@ public class homescreen extends AppCompatActivity {
         else
         {
             REGISTER_BOX.setVisibility(View.GONE);
+            popup_btn.setVisibility(View.GONE);
+
+
 
         }
         SCAN_BTN.setOnClickListener(new View.OnClickListener() {
@@ -139,8 +160,16 @@ public class homescreen extends AppCompatActivity {
         HELP.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent toHelp = new Intent("android.intent.action.HelpPage");
-                startActivity(toHelp);
+//                Intent toHelp = new Intent("android.intent.action.HelpPage");
+//                startActivity(toHelp);
+
+                startActivity(new Intent(homescreen.this, RegInfo.class));
+
+                //helpPopUpWindow(v);
+
+
+
+
             }
         });
 
@@ -154,12 +183,51 @@ public class homescreen extends AppCompatActivity {
         });
 
     }
+
+    /*private void helpPopUpWindow(View anchorView1) {
+
+        PopupWindow popUpHelp = new PopupWindow(homescreen.this);
+        View layoutHelp = getLayoutInflater().inflate(R.layout.help_pop, null);
+        popUpHelp.setContentView(layoutHelp);
+
+        popUpHelp.setHeight(WindowManager.LayoutParams.WRAP_CONTENT);
+        popUpHelp.setWidth(WindowManager.LayoutParams.WRAP_CONTENT);
+
+        popUpHelp.setOutsideTouchable(true);
+        popUpHelp.setFocusable(true);
+        popUpHelp.setBackgroundDrawable(new BitmapDrawable());
+        popUpHelp.showAsDropDown(anchorView1);
+
+
+    }
+*/
+    private void displayPopupWindow(View anchorView) {
+
+
+
+        PopupWindow popup = new PopupWindow(homescreen.this);
+        View layout = getLayoutInflater().inflate(R.layout.pop_up1, null);
+        popup.setContentView(layout);
+
+        popup.setHeight(WindowManager.LayoutParams.WRAP_CONTENT);
+        popup.setWidth(WindowManager.LayoutParams.WRAP_CONTENT);
+
+        popup.setOutsideTouchable(true);
+        popup.setFocusable(true);
+
+        popup.setBackgroundDrawable(new BitmapDrawable());
+        popup.showAsDropDown(anchorView);
+
+    }
+
     @Override
     public void onRestart()
     {
         super.onRestart();
         finish();
+
         startActivity(getIntent());
     }
+
 
 }

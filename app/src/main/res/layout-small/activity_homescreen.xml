@@ -165,6 +165,14 @@
             android:textStyle="bold"
             android:typeface="sans" />
 
+        <ImageButton
+            android:id="@+id/popInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignRight="@+id/checkBox2"
+            android:layout_alignBaseline="@+id/checkBox2"
+            android:background="@drawable/ic_popout"/>
+
 
     </RelativeLayout>
 

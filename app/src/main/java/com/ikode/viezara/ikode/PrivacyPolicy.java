@@ -1,10 +1,8 @@
 package com.ikode.viezara.ikode;
 
 import android.app.Activity;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
-import android.webkit.WebView;
 import android.widget.Button;
 
 
@@ -31,7 +29,7 @@ public class PrivacyPolicy extends Activity {
         //text1
 
 
-        String text = "<html><body style=\"text-align:justify\"> %s </body></Html>";
+       /* String text = "<html><body style=\"text-align:justify\"> %s </body></Html>";
         String data = "Your privacy is important to Ikona and we go to great lengths to protect it. This Privacy Policy applies to the online collection of personal information via the IkodeSC Reader® mobile applications operated by Ikona AG and its worldwide affiliated companies and subsidiaries. This Statement does not apply to information collected in any other way, including offline, through Ikona® and Ikode® Websites, or through other Ikona mobile applications. IkodeSC Reader® is a counter-fraud authenticity versification tool and may contain buttons or links to Ikona's Counter-fraud Exchanges or to sites maintained by third party Ikode® clients that offer such authenticity verification for their products, documents or services. Whereas the Ikona Counter-fraud Exchange servers are operated and it's appropriate security, third party sites are not operated or controlled by Ikona and may have different privacy practices.";
         WebView webView = (WebView) findViewById(R.id.wView1);
         webView.loadData(String.format(text, data), "text/html; charset=utf-8 ", "utf-8");
@@ -56,7 +54,7 @@ public class PrivacyPolicy extends Activity {
         String data3 = "We collect information about our users in the following ways: directly from the user (when registering with us), from our Counter-fraud Exchange server & application logs every time you start to use the IkodeSC Reader® app for user authentication, as well as when you make changes to the app's Settings, for instance:";
         WebView webView3 = (WebView) findViewById(R.id.wView4);
         webView3.loadData(String.format(text, data), "text/html; charset=utf-8", "utf-8");
-        webView3.setBackgroundColor(Color.rgb(219, 227, 227));
+        webView3.setBackgroundColor(Color.rgb(219, 227, 227));*/
 
 
 

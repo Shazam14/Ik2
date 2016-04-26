@@ -50,12 +50,16 @@
                 android:textStyle="italic"
                 android:typeface="sans" />
 
-            <WebView
-                android:id="@+id/wView1"
-                android:layout_marginTop="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"></WebView>
-
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ikona_scope"
+                android:layout_marginTop="10dp"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:layout_gravity="center_vertical|left"
+                android:textStyle="normal"
+                android:typeface="sans" />
 
 
             <TextView
@@ -79,20 +83,26 @@
                 android:typeface="sans" />
 
 
-            <WebView
-            android:id="@+id/wView2"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/def_1"
                 android:layout_marginTop="5dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
 
-            </WebView>
-
-            <WebView
-                android:id="@+id/wView3"
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/def_2"
                 android:layout_marginTop="5dp"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-            </WebView>
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
 
 
             <TextView

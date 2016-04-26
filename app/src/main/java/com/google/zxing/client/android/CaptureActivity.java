@@ -686,10 +686,9 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
 
       } else {
 
-        builder.setMessage(displayContents + "\n\n" + "This is not an Ikode Smartcode®:\n" +
-                          "The scanned barcode may contain a link\n" +
-                          "Ifso, would you like us to redirect you to\n" +
-                          "the linked Website/Phone/Email?\n" +
+        builder.setMessage(displayContents + "\n\n" + "This is not an Ikode Smartcode®:" +
+                          "The scanned barcode may contain a link If so," +
+                          "would you like us to redirect you to the linked Website/Phone/Email?\n" +
                           "CAUTION: We do not verify the link\n" +
                           messageType + "?").setPositiveButton("Yes", dialogClickListener).setNegativeButton("No", dialogClickListener).show();
 
@@ -697,10 +696,9 @@ public final class CaptureActivity extends Activity implements SurfaceHolder.Cal
 
     } else {
 
-      builder.setMessage(value_toSend + "\n\n" + "This is not an Ikode Smartcode®:\n" +
-              "The scanned barcode may contain a link\n" +
-              "Ifso, would you like us to redirect you to\n" +
-              "the linked Website/Phone/Email?\n" +
+      builder.setMessage(value_toSend + "\n\n" + "This is not an Ikode Smartcode®:" +
+              "The scanned barcode may contain a link If so," +
+              "would you like us to redirect you to the linked Website/Phone/Email?\n" +
               "CAUTION: We do not verify the link\n" +
               messageType + "?").setPositiveButton("Yes", dialogClickListener).setNegativeButton("No", dialogClickListener).show();
 

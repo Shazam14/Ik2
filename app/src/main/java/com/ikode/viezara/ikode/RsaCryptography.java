@@ -28,9 +28,8 @@ public class RsaCryptography {
 
         // create the key factory
         KeyFactory kFactory = KeyFactory.getInstance("RSA", new BouncyCastleProvider());
-        // decode base64 of your key
         byte yourKey[] =  Base64.decode(pk, Base64.DEFAULT);
-        //Log.v("test", new String(yourKey));
+
 
         // generate the public key
         X509EncodedKeySpec spec =  new X509EncodedKeySpec(yourKey);

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ikodebox">
+
+
+    <TextView
+        android:id="@+id/tvCaption1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:textStyle="italic|bold"
+        android:text="If you need help or na certain functions might require HELP"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorPrimary"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/tvCaption2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:textStyle="italic|bold"
+        android:text="Please click on this icon in order to get help for that particular feature/function"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/colorPrimary"
+        android:drawableRight="@drawable/ic_popoutbig"
+        android:layout_below="@+id/tvCaption1"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

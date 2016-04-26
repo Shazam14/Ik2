@@ -1,5 +1,6 @@
 package com.ikode.viezara.ikode;
 
+import android.content.Context;
 import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.Typeface;
@@ -20,12 +21,16 @@ public class AboutUs extends AppCompatActivity {
     private ImageButton LICENSE;
     private ImageButton PRIVACY;
     private ImageButton TERMS;
+    private ImageButton UM;
+    private ImageButton FAQ;
     private TextView ikonalicenseabout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_about_us);
+
+        final Context context = this;
 
         ikonalicenseabout = (TextView) findViewById(R.id.iklabtTxt);
         SpannableString iklabouttext = new SpannableString("licensed by Ikona®");
@@ -36,6 +41,9 @@ public class AboutUs extends AppCompatActivity {
         ikonalicenseabout.setMovementMethod(LinkMovementMethod.getInstance());
         ikonalicenseabout.setText(iklabouttext);
         ikonalicenseabout.setHighlightColor(Color.TRANSPARENT);
+
+
+
 
 
         /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -50,9 +58,19 @@ public class AboutUs extends AppCompatActivity {
             }
         });*/
 
+        UM = (ImageButton) findViewById(R.id.uM);
         LICENSE = (ImageButton) findViewById(R.id.licensesUse);
         PRIVACY = (ImageButton) findViewById(R.id.privacyPolicy);
         TERMS = (ImageButton) findViewById(R.id.termsOfUse);
+        FAQ = (ImageButton) findViewById(R.id.faQ);
+
+        UM.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(context, UserManual.class);
+                startActivity(intent);
+            }
+        });
 
         LICENSE.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,6 +96,16 @@ public class AboutUs extends AppCompatActivity {
             }
         });
 
+
+        FAQ.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+                Intent toFAQ = new Intent("android.intent.action.HelpPage");
+                startActivity(toFAQ);
+
+            }
+        });
 
 
 

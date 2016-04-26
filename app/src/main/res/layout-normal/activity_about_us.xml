@@ -76,7 +76,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/relativeLayoutInfos"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="5dp"
         android:layout_marginLeft="32dp"
         android:layout_marginRight="32dp"
         android:layout_below="@+id/relativeLayoutAbout">
@@ -148,6 +148,20 @@
             android:layout_below="@+id/textView8"
             android:layout_alignParentLeft="true"
             android:layout_alignParentStart="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="User Manual :"
+            android:layout_marginTop="2dp"
+            android:id="@+id/textViewUM"
+            android:typeface="sans"
+            android:textSize="18sp"
+            android:textColor="#ff000000"
+            android:textStyle="bold"
+            android:layout_below="@+id/textViewFaq"
+            />
 
 
 
@@ -223,6 +237,15 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
 
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_keyboard_arrow_right_black_36dp"
+            android:id="@+id/uM"
+            android:layout_alignBottom="@+id/textViewUM"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
 
 
         <ImageButton
@@ -286,7 +309,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/relativeLayoutCredits"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="5dp"
         android:layout_below="@+id/relativeLayoutCopyright"
         android:layout_alignRight="@+id/relativeLayoutInfos"
         android:layout_alignEnd="@+id/relativeLayoutInfos"

@@ -169,6 +169,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="User Manual :"
+            android:layout_marginTop="2dp"
+            android:id="@+id/textViewUM"
+            android:typeface="sans"
+            android:textSize="34sp"
+            android:textColor="#ff000000"
+            android:textStyle="bold"
+            android:layout_below="@+id/textViewFaq"
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
             android:text="1.3.2016"
             android:textSize="34sp"
             android:id="@+id/textView28"
@@ -223,6 +237,15 @@
             android:layout_alignParentRight="true"
             android:layout_alignParentEnd="true" />
 
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_keyboard_arrow_right_black_36dp"
+            android:id="@+id/uM"
+            android:layout_alignBottom="@+id/textViewUM"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+
 
 
         <ImageButton
@@ -241,7 +264,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:id="@+id/relativeLayoutCopyright"
         android:layout_below="@+id/relativeLayoutInfos">
 
@@ -286,7 +309,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/relativeLayoutCredits"
-        android:layout_marginTop="30dp"
+        android:layout_marginTop="20dp"
         android:layout_below="@+id/relativeLayoutCopyright"
         android:layout_alignLeft="@+id/relativeLayoutInfos"
         android:layout_alignStart="@+id/relativeLayoutInfos"

@@ -167,4 +167,9 @@
         <item name="progress_unreached_bar_height">0.75dp</item>
     </style>
 
+    <style name="AppTheme.CustomPopUp">
+        <item name="android:windowIsTranslucent">true</item>
+        <item name="android:windowCloseOnTouchOutside">true</item>
+    </style>
+
 </resources>
