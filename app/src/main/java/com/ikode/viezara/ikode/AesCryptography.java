@@ -42,8 +42,6 @@ public class AesCryptography {
         byte[] encryptedTextBytes =
                 org.apache.commons.codec.binary.Base64.encodeBase64(cipher2.doFinal(message.getBytes("UTF-8")));
 
-        //Log.v("AES ENCRYPTION TWO: ", new String(encryptedTextBytes).toString() + "]" + new String(org.apache.commons.codec.binary.Base64.encodeBase64(iv)) + "]" + new String(org.apache.commons.codec.binary.Base64.encodeBase64(salt)));
-
         return new String(encryptedTextBytes).toString() + delimeter
                 + new String(org.apache.commons.codec.binary.Base64.encodeBase64(iv)) + delimeter
                 + new String(org.apache.commons.codec.binary.Base64.encodeBase64(salt));
@@ -71,7 +69,6 @@ public class AesCryptography {
         byte salt[] = new byte[16];
         random.nextBytes(salt);
 
-        //return "phpseclib/salt";
         return salt;
     }
 

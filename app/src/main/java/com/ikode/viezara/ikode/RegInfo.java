@@ -20,8 +20,6 @@ public class RegInfo extends Activity{
 
         int width = dm.widthPixels;
         int height = dm.heightPixels;
-
-
         getWindow().setLayout((int)(width*.9),(int)(height*.4));
 
     }
