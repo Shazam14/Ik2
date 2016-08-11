@@ -50,7 +50,7 @@ public class RegistrationPage extends Activity implements View.OnClickListener {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.content_registration_page);
+        setContentView(R.layout.activity_registration_page);
         FacebookSdk.sdkInitialize(getApplicationContext());
 
         // create a instance of SQLite Database
@@ -63,7 +63,7 @@ public class RegistrationPage extends Activity implements View.OnClickListener {
         PASSWORD = (EditText) findViewById(R.id.registration_password);
         SIGNUP_BTN = (Button) findViewById(R.id.signup_btn);
 //        cancel = (TextView) findViewById(R.id.textView2);
-        TXTPHRASE = (EditText) findViewById(R.id.editText);
+        TXTPHRASE = (EditText) findViewById(R.id.tokensignup);
         //HELPBUTTON = (ImageButton) findViewById(R.id.imageButton3);
 
         String sp = "Please read our Privacy Policy at this time before you register!";
@@ -92,7 +92,8 @@ public class RegistrationPage extends Activity implements View.OnClickListener {
         SIGNUP_BTN.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                    input_password = PASSWORD.getText().toString().trim();
+
+                input_password = PASSWORD.getText().toString().trim();
                     input_email = EMAIL.getText().toString().trim();
                     input_phrase = TXTPHRASE.getText().toString().trim();
                     if (isValid(input_email) == true) {

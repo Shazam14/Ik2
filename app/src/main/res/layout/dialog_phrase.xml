@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
     android:layout_width="wrap_content"
@@ -33,4 +34,41 @@
         android:layout_gravity="center"
         android:background="@drawable/ic_lock"
         android:id="@+id/button" />
+=======
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#dbe3e3"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:id="@+id/textView14"
+        android:text="PHRASE" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Please enter a Passphrase in order for you to reset your account"
+        android:textAlignment="center"
+        android:id="@+id/textView15" />
+
+    <EditText
+        android:layout_width="261dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:hint="Verification Code"
+        android:drawableLeft="@drawable/lockverify"
+        android:id="@+id/editText2" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/button_verify"
+        android:id="@+id/button" />
+>>>>>>> Stashed changes
 </LinearLayout>

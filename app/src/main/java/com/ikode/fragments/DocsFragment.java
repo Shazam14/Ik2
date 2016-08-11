@@ -37,6 +37,8 @@ public class DocsFragment extends Fragment {
         Cursor cursor = loginDataBaseAdapter.fetchAllDocs();
 
         // The desired columns to be bound
+
+
         String[] columns = new String[]{
                 "_id",
                 "type",

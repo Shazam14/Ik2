@@ -28,7 +28,7 @@ public class UserChoice extends AppCompatActivity implements NavigationView.OnNa
     private NavigationView iDrawer;
     private DrawerLayout iDrawerLayout;
     private ActionBarDrawerToggle iDrawerToggle;
-   /* private int iSelectedId;
+    /* private int iSelectedId;
     private boolean iUserSeeDrawer = false;*/
 
     ArrayList<String> mPeople = new ArrayList<String>();

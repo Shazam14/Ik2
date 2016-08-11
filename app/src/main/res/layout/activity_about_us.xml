@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -389,3 +390,162 @@
     </RelativeLayout>
 </RelativeLayout>
 
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    tools:context="ikona.ikode.About">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:id="@+id/AboutApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_medium_italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:backgroundTint="@color/colorWhite"
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="About"
+            android:layout_gravity="left"
+            android:elevation="4dp"
+            app:textStyle="normal"
+            android:textSize="20sp" />
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_medium_italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:backgroundTint="@color/colorWhite"
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Version"
+            android:layout_gravity="left"
+            android:elevation="4dp"
+            app:textStyle="normal"
+            android:textSize="20sp" />
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_medium_italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:backgroundTint="@color/colorWhite"
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Updates"
+            android:layout_gravity="left"
+            android:elevation="4dp"
+            app:textStyle="normal"
+            android:textSize="20sp" />
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_medium_italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:backgroundTint="@color/colorWhite"
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="EULA"
+            android:layout_gravity="left"
+            android:elevation="4dp"
+            app:textStyle="normal"
+            android:textSize="20sp" />
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_medium_italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:backgroundTint="@color/colorWhite"
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Privacy Policy"
+            android:layout_gravity="left"
+            android:elevation="4dp"
+            app:textStyle="normal"
+            android:textSize="20sp" />
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_medium_italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:backgroundTint="@color/colorWhite"
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Terms of Use"
+            android:layout_gravity="left"
+            android:elevation="4dp"
+            app:textStyle="normal"
+            android:textSize="20sp" />
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_medium_italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:backgroundTint="@color/colorWhite"
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="FAQ"
+            android:layout_gravity="left"
+            android:elevation="4dp"
+            app:textStyle="normal"
+            android:textSize="20sp" />
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_medium_italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:backgroundTint="@color/colorWhite"
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="User Manual"
+            android:layout_gravity="left"
+            android:elevation="4dp"
+            app:textStyle="normal"
+            android:textSize="20sp" />
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_medium_italic"
+            android:textColor="@color/colorPrimaryDark"
+            android:paddingLeft="@dimen/activity_horizontal_margin"
+            android:backgroundTint="@color/colorWhite"
+            android:gravity="left"
+            android:textAllCaps="false"
+            android:text="Credits"
+            android:layout_gravity="left"
+            android:elevation="4dp"
+            app:textStyle="normal"
+            android:textSize="20sp" />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+>>>>>>> Stashed changes

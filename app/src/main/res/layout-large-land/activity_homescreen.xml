@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:orientation="vertical"
+    android:clipChildren="false"
+    tools:context="ikona.ikode.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:elevation="20dp"
+        android:background="#dbe3e3"
+        android:layout_margin="40dp">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="-40dp"
+            android:background="@drawable/ic_ikodeglobe"
+            android:layout_gravity="center"
+            android:contentDescription="Ikode Icon" />
+
+        <com.devspark.robototextview.widget.RobotoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_medium_italic"
+            android:gravity="center_vertical"
+            android:text="licensed by Ikona ®"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_below="@+id/imageView2"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/ikonalicensetext" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:orientation="vertical">
+
+                <com.devspark.robototextview.widget.RobotoCheckBox
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Not yet Registered ?"
+                    android:id="@+id/notyetRegister"
+                    app:typeface="roboto_light"
+                    android:textSize="16sp"
+                    android:layout_gravity="left"
+                    android:checked="false" />
+
+                <com.devspark.robototextview.widget.RobotoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:typeface="roboto_medium_italic"
+                    android:drawablePadding="2dp"
+                    android:gravity="left"
+                    android:drawableRight="@drawable/ic_ikode_launch"
+                    android:text="Register now to get full access to Ikode SC Reader Settings and improved features."
+                    android:textStyle="bold"
+                    android:textSize="12sp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_weight="1"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scan Code "
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:textColor="#ffffff"
+                        android:drawableLeft="@drawable/ic_qrbig"
+                        android:id="@+id/button1"
+                        android:background="@drawable/button_shadow" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scan RFID "
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:textColor="#ffffff"
+                        android:textAllCaps="false"
+                        android:drawableLeft="@drawable/ic_qrbig"
+                        android:background="@drawable/button_shadow"
+                        android:id="@+id/loginButton1" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="1">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scan NFC "
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:textColor="#ffffff"
+                        android:textAllCaps="false"
+                        android:background="@drawable/button_shadow"
+                        android:drawableLeft="@drawable/ic_qrbig"
+                        android:id="@+id/button2" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="bottom"
+                android:orientation="horizontal">
+
+
+                <com.devspark.robototextview.widget.RobotoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:typeface="roboto_mono_medium"
+                    android:text="HELP"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic__ikodehelp"
+                    android:gravity="left|center"
+                    android:textSize="20sp" />
+
+                <com.devspark.robototextview.widget.RobotoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:typeface="roboto_mono_medium"
+                    android:drawableRight="@drawable/ic_ikodeinfo"
+                    android:text="ABOUT"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+
+    <!--
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_gravity="center_vertical"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:paddingTop="16dp"
+                android:paddingBottom="16dp"
+                android:orientation="vertical"
+                android:layout_gravity="center_vertical"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:layout_weight="2"
+                    android:gravity="center">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scan Code "
+                        android:textAllCaps="false"
+                        android:gravity="center"
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:textColor="#ffffff"
+                        android:drawableLeft="@drawable/ic_qrbig"
+                        android:id="@+id/button1"
+                        android:background="@drawable/button_shadow"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="2">
+
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scan RFID "
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:textColor="#ffffff"
+                        android:textAllCaps="false"
+                        android:drawableLeft="@drawable/ic_qrbig"
+                        android:background="@drawable/button_shadow"
+                        android:id="@+id/button"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_gravity="center"
+                    android:gravity="center"
+                    android:layout_weight="2">
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Scan NFC "
+                        android:padding="4dp"
+                        android:textSize="20sp"
+                        android:textColor="#ffffff"
+                        android:textAllCaps="false"
+                        android:background="@drawable/button_shadow"
+                        android:drawableLeft="@drawable/ic_qrbig"
+                        android:id="@+id/button2" />
+
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:paddingLeft="16dp"
+            android:paddingRight="16dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:orientation="vertical">
+
+
+
+            <com.devspark.robototextview.widget.RobotoCheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Not yet Registered?"
+                android:id="@+id/checkBox"
+                app:typeface="roboto_bold"
+                android:textSize="34sp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:checked="false"/>
+
+            <com.devspark.robototextview.widget.RobotoTextView
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:typeface="roboto_medium_italic"
+                android:text="Register now to get full access to Ikode SC Reader Settings and improved features."
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:drawableRight="@drawable/ic_ikode_launch"
+                android:textSize="24sp"
+                android:layout_weight="1"
+                />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:typeface="roboto_mono_medium"
+                    android:text="HELP"
+                    android:layout_weight="1"
+                    android:drawableLeft="@drawable/ic__ikodehelp"
+                    android:gravity="left|center"
+                    android:textSize="20sp"
+                    />
+
+                <com.devspark.robototextview.widget.RobotoTextView
+                    xmlns:android="http://schemas.android.com/apk/res/android"
+                    xmlns:app="http://schemas.android.com/apk/res-auto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    app:typeface="roboto_mono_medium"
+                    android:drawableRight="@drawable/ic_ikodeinfo"
+                    android:text="ABOUT"
+                    android:layout_weight="1"
+                    android:gravity="right|center"
+                    android:textSize="20sp"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    -->
+
+</LinearLayout>
+
+

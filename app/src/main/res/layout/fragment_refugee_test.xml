@@ -1,0 +1,82 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    tools:context="com.ikode.viezara.ikode.RefugeeTest">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center_vertical">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="TEST DEMO"
+            android:id="@+id/testDemo" />
+
+        <com.devspark.robototextview.widget.RobotoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_medium_italic"
+            android:gravity="center"
+            android:text="Migrants List"
+            android:textStyle="bold"
+            android:textSize="54sp" />
+
+
+        <com.devspark.robototextview.widget.RobotoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_medium_italic"
+            android:gravity="center"
+            android:text="Aries Nino Suson"
+            android:textStyle="bold"
+            android:textSize="24sp"
+            android:id="@+id/migrantCheck" />
+
+        <com.devspark.robototextview.widget.RobotoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_medium_italic"
+
+            android:gravity="center"
+
+            android:text="Aries Nino Suson"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
+        <com.devspark.robototextview.widget.RobotoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_medium_italic"
+
+            android:gravity="center"
+
+            android:text="Aries Nino Suson"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
+        <com.devspark.robototextview.widget.RobotoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_medium_italic"
+
+            android:gravity="center"
+
+            android:text="Aries Nino Suson"
+            android:textStyle="bold"
+            android:textSize="24sp" />
+
+
+    </LinearLayout>
+
+</FrameLayout>

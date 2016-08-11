@@ -1,15 +1,135 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
+    android:background="#dbe3e3"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="com.ikode.viezara.ikode.RegistrationPage">
-    <android.support.design.widget.AppBarLayout
+
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:theme="@style/Theme.AppCompat">
-    </android.support.design.widget.AppBarLayout>
-    <include layout="@layout/content_registration_page" />
-</android.support.design.widget.CoordinatorLayout>
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawableLeft="@drawable/ic_info_black_24dp"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColorLink="@color/colorPrimaryDark"
+            android:textColor="#ff000000"
+            android:textSize="12dp"
+            android:textStyle="bold"
+            android:typeface="sans" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_ikode_color"
+            android:drawableLeft="@drawable/ic_ikode_eml"
+
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:textSize="12sp"
+            android:id="@+id/registration_email"
+            android:hint=" john@ikonacloud.co.nz" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/ic_ikode_lock"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:textSize="12sp"
+            android:id="@+id/registration_password"
+            android:background="@drawable/edittext_ikode_color"
+            android:hint=" **********" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_ikode_color"
+            android:drawableLeft="@drawable/ic_ikode_passphrase"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:textSize="12sp"
+            android:id="@+id/tokensignup"
+            android:inputType="textVisiblePassword"
+            android:hint=" ID Token" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="14sp"
+            app:typeface="roboto_slab_regular"
+            android:text="ID Token must be between 8 and 16 characters long"
+
+            />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shadow"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text="Register Now"
+            android:id="@+id/signup_btn"
+            android:textAllCaps="false" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+
+        <CheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textSize="14sp"
+            android:text="I Like to receive information about Ikode deployment or associated counter-fraud services. " />
+
+
+    </LinearLayout>
+
+</LinearLayout>
+

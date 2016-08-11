@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
@@ -33,3 +34,124 @@
         android:layout_centerHorizontal="true" />
 
 </RelativeLayout>
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:paddingBottom="16dp"
+    android:paddingTop="16dp"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <com.devspark.robototextview.widget.RobotoEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edittext_ikode_color"
+            android:drawableLeft="@drawable/ic_ikode_eml"
+            app:typeface="roboto_regular"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:textSize="12sp"
+            android:hint=" john@ikonacloud.co.nz"
+            android:id="@+id/registration_email" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+
+        <com.devspark.robototextview.widget.RobotoEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            app:typeface="roboto_regular"
+            android:drawableLeft="@drawable/ic_ikode_lock"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            android:textSize="12sp"
+            android:background="@drawable/edittext_ikode_color"
+            android:id="@+id/registration_password"
+            android:hint=" **********" />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="20dp" />
+
+        <com.devspark.robototextview.widget.RobotoEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_ikode_color"
+            android:drawableLeft="@drawable/ic_ikode_passphrase"
+            android:paddingLeft="10dp"
+            android:drawablePadding="10dp"
+            app:typeface="roboto_regular"
+            android:textSize="12sp"
+            android:inputType="textVisiblePassword"
+            android:id="@+id/tokenID"
+            android:hint=" ID Token" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+
+        <com.devspark.robototextview.widget.RobotoTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textSize="14sp"
+            app:typeface="roboto_slab_regular"
+            android:text="ID Token must be between 8 and 16 characters long"
+
+            />
+
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <com.devspark.robototextview.widget.RobotoButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_shadow"
+            app:typeface="roboto_condensed_bold"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:text="Register Now"
+            android:id="@+id/signup_btn"
+            android:textAllCaps="false" />
+
+        <Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+
+        <com.devspark.robototextview.widget.RobotoCheckBox
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_condensed_italic"
+            android:textSize="14sp"
+            android:text="I Like to receive information about Ikode deployment or associated counter-fraud services. " />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+>>>>>>> Stashed changes

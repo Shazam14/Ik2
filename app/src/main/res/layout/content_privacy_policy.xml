@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
@@ -526,3 +527,532 @@
 
 
 
+=======
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="10dp"
+    android:background="#dbe3e3"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    app:theme="@style/AppTheme">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ikode_bar"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:background="#dbe3e3"
+        android:fillViewport="false"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:orientation="vertical">
+
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Ikona Privacy Policy"
+                android:textAlignment="center"
+                android:textColor="#ff000000"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Scope"
+                android:textColor="#ff000000"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ikona_scope"
+                android:layout_marginTop="10dp"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:layout_gravity="center_vertical|left"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Definitions"
+                android:textColor="#ff000000"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="In this Privacy Policy statement"
+                android:textColor="#ff000000"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:typeface="sans" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/def_1"
+                android:layout_marginTop="5dp"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/def_2"
+                android:layout_marginTop="5dp"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="HIGHLIGHTS"
+                android:textColor="#ff000000"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="What information is collected and how is that information used?"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:typeface="sans" />
+
+            <WebView
+                android:id="@+id/wView4"
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            </WebView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_1"
+                android:textColor="#ff000000"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textStyle="normal|bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_marginTop="5dp"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_2"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:textStyle="normal|bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_3"
+                android:layout_marginTop="5dp"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:textStyle="normal|bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_4"
+                android:textColor="#ff000000"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textStyle="normal|bold"
+                android:typeface="sans" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_5"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="normal|bold"
+                android:typeface="sans" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_6"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="normal|bold"
+                android:typeface="sans" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_7"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="normal|bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_8"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="5dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_9"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="5dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_next_collect"
+                android:textColor="#ff000000"
+                android:textSize="20sp"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="5dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_next_collect_1"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="10dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_next_collect_2"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="normal|bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/collect_next_collect_3"
+                android:textColor="#ff000000"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textStyle="normal|bold"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/cookie_flash"
+                android:textColor="#ff000000"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textStyle="normal|italic"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_info"
+                android:textColor="#ff000000"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="normal|italic"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How is my personal information protected?"
+                android:textColor="#ff000000"
+                android:textSize="20sp"
+                android:textStyle="normal|bold"
+                android:layout_marginTop="10dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_info_1"
+                android:textColor="#ff000000"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_info_2"
+                android:textColor="#ff000000"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_info_3"
+                android:textColor="#ff000000"
+                android:layout_marginTop="5dp"
+                android:textSize="18sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/personal_info_4"
+                android:textColor="#ff000000"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Who has access to the personal information?"
+                android:textColor="#ff000000"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/access_1"
+                android:textColor="#ff000000"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:typeface="sans" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/access_2"
+                android:layout_marginTop="5dp"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/access_3"
+                android:textColor="#ff000000"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/counter_fraud"
+                android:textColor="#ff000000"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="How may I correct, amend, or delete my personal information, or update my preferences?"
+                android:textColor="#ff000000"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold|italic"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/correct_1"
+                android:textColor="#ff000000"
+                android:layout_marginTop="5dp"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/correct_2"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:layout_marginTop="5dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/correct_3"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:layout_marginTop="5dp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/correct_4"
+                android:layout_marginTop="5dp"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/ikona_ag"
+                android:layout_marginTop="8dp"
+                android:textColor="#ff000000"
+                android:textSize="20sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/street"
+                android:layout_marginTop="2dp"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/street_1"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:layout_marginTop="2dp"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/countrySwiss"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/country"
+                android:layout_marginTop="2dp"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:textStyle="normal"
+                android:typeface="sans" />
+
+            <TextView
+                android:id="@+id/privacyFooter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textColor="#ff000000"
+                android:textSize="15sp"
+                android:textStyle="italic"
+                android:typeface="sans"
+                android:text="@string/privacy_footer"/>
+            <LinearLayout
+                android:id="@+id/bottom_container"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_alignParentBottom="true"
+                android:paddingBottom="2dp"
+                android:orientation="horizontal">
+                <Button
+                    android:id ="@+id/btnCancel"
+                    android:layout_width="150dp"
+                    android:layout_height="36dp"
+                    android:background="@drawable/button_shadow"
+                    android:layout_weight="0.5"
+                    android:typeface="sans"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#dbe3e3"
+                    android:textSize="12sp"
+                    android:text="CANCEL" />
+                <Button
+                    android:id ="@+id/btnAccept"
+                    android:layout_width="150dp"
+                    android:layout_height="36dp"
+                    android:textSize="12sp"
+                    android:typeface="sans"
+                    android:gravity="center"
+                    android:textStyle="bold"
+                    android:textColor="#dbe3e3"
+                    android:background="@drawable/button_shadow"
+                    android:layout_weight="0.5"
+                    android:text="I ACCEPT" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
+
+
+
+>>>>>>> Stashed changes

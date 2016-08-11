@@ -105,7 +105,7 @@ public class UserConnect extends Activity {
                         SharedPreferences.Editor editor = SP.edit();
                         editor.putString(RequestData.SESSION_CODE, txtSecurityCode.getText().toString());
                         editor.commit();
-                        Intent userChoice = new Intent("android.intent.action.UserProfile");
+                        Intent userChoice = new Intent("android.intent.action.UserProfileFinal");
                         startActivity(userChoice);
                         onBackPressed();
                         //connectUser();
@@ -121,7 +121,7 @@ public class UserConnect extends Activity {
         });
 
         } else {
-            Intent TO_USER_CONNECT = new Intent(this, UserProfile.class);
+            Intent TO_USER_CONNECT = new Intent(this, UserProfileFinal.class);
             startActivity(TO_USER_CONNECT);
         }
     }
@@ -137,7 +137,7 @@ public class UserConnect extends Activity {
     }
     private void verify(){
         if ( (SecurityCode.equals(convertPhrase))) {Toast.makeText(getApplicationContext(), "User Credential is Verified!", Toast.LENGTH_LONG).show();
-            Intent intent = new Intent("android.intent.action.UserProfile");
+            Intent intent = new Intent("android.intent.action.UserProfileFinal");
             startActivity(intent);
             onBackPressed();
         } else {
@@ -287,7 +287,7 @@ public class UserConnect extends Activity {
             if(error.equals("false"))
             {
                 Toast.makeText(UserConnect.this, msg, Toast.LENGTH_LONG).show();
-                Intent userChoice = new Intent("android.intent.action.UserProfile");
+                Intent userChoice = new Intent("android.intent.action.UserProfileFinal");
                 startActivity(userChoice);
                 onBackPressed();
             }

@@ -1,6 +1,5 @@
 package com.ikode.viezara.ikode;
 
-import android.database.Cursor;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.TabLayout;
@@ -11,8 +10,6 @@ import android.support.v4.view.ViewPager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
-import android.widget.SimpleCursorAdapter;
 
 import com.ikode.fragments.DecodeFragment;
 import com.ikode.fragments.DocsFragment;

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#007F7F</color>
-    <color name="colorPrimaryDark">#007F7F</color>
-    <color name="colorAccent">#718B8C</color>
+
   <color name="contents_text">#ff000000</color>
   <color name="encode_view">#ffffffff</color>
   <color name="possible_result_points">#c0ffbd21</color> <!-- Android standard ICS color -->
@@ -16,4 +14,13 @@
   <color name="viewfinder_mask">#60000000</color>
     <color name="tabsScrollColor">#ffc0c0c0</color>
     <color name="tab_color">#dbe3e3</color>
+  <color name="black">#000000</color>
+  <color name="white">#ffffff</color>
+
+  <color name="colorPrimary">#007F7F</color>
+  <color name="colorPrimaryDark">#007F7F</color>
+  <color name="colorAccent">#CBAC0A</color>
+  <color name="colorGray">#E0F2F1</color>
+  <color name="colorWhite">#FFFFFF</color>
+  <color name="colorBGround">#dbe3e3</color>
 </resources>

@@ -4,6 +4,7 @@ import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
@@ -17,9 +18,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.zxing.BarcodeFormat;
+import com.google.zxing.MultiFormatWriter;
+import com.google.zxing.WriterException;
+import com.google.zxing.common.BitMatrix;
 import com.ikode.fragments.FragmentProfSettings;
 import com.ikode.fragments.FragmentProfile;
 import com.ikode.fragments.SecureDataStore;
@@ -37,10 +43,13 @@ public class UserProfile extends AppCompatActivity {
     private NavigationView iDrawer;
     private DrawerLayout iDrawerLayout;
     private TextView userID;
-
+    private ImageView qr;
+    private Bitmap bitmap = null;
     //for real
     FragmentManager mFragmentManager;
     FragmentTransaction mFragmentTransaction;
+
+    public final static int WIDTH = 500;
 
 
     @Override
@@ -93,8 +102,10 @@ public class UserProfile extends AppCompatActivity {
         iDrawer = (NavigationView) findViewById(R.id.main_drawer_profile);
         View header=iDrawer.getHeaderView(0);
         userID = (TextView) header.findViewById(R.id.user_);
-        userID.setText(RequestData.storedEmail);
-
+        String[] parts = RequestData.storedEmail.split("@");
+        userID.setText(parts[0].toString());
+        qr = (ImageView) header.findViewById(R.id.img_QRCode);
+        getQRCode();
         iDrawer.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener(){
 
             @Override
@@ -302,6 +313,39 @@ public class UserProfile extends AppCompatActivity {
         finish();
         startActivity(getIntent());
     }
+
+    private void getQRCode() {
+        try {
+            bitmap = encodeAsBitmap(RequestData.storedEmail);
+            qr.setImageBitmap(bitmap);
+        } catch (WriterException e) {
+            e.printStackTrace();
+        }
+    }
+
+    // this is method call from on create and return bitmap image of QRCode.
+    Bitmap encodeAsBitmap(String str) throws WriterException {
+        BitMatrix result;
+        try {
+            result = new MultiFormatWriter().encode(str,
+                    BarcodeFormat.QR_CODE, WIDTH, WIDTH, null);
+        } catch (IllegalArgumentException iae) {
+            // Unsupported format
+            return null;
+        }
+        int w = result.getWidth();
+        int h = result.getHeight();
+        int[] pixels = new int[w * h];
+        for (int y = 0; y < h; y++) {
+            int offset = y * w;
+            for (int x = 0; x < w; x++) {
+                pixels[offset + x] = result.get(x, y) ? getResources().getColor(R.color.black) : getResources().getColor(R.color.white);
+            }
+        }
+        Bitmap bitmap = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
+        bitmap.setPixels(pixels, 0, 500, 0, 0, w, h);
+        return bitmap;
+    } /// end of this method
 
 }
 

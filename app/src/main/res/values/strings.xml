@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 <resources>
     <string name="app_name">Ikode SC Reader</string>
     <string name="action_settings">Settings</string>
@@ -307,3 +308,395 @@ Privacy Policy, do not download or use the Application.</string>
     <string name="licenseseach2">© Ikona AG All Rights Reserved 2016.</string>
     <string name="popFeat">\"When you register your\nIkode SC Readerwith us you get the\nIkode SC Reader PRO features for FREE.\nOur strict Privacy Policy applies\"</string>
 </resources>
+=======
+<resources>
+
+    <string name="register_dialog_update">Register Screen</string>
+    <string name="app_picker_name">Applications</string>
+    <string name="bookmark_picker_name">Bookmarks</string>
+    <string name="button_add_calendar">Add to calendar</string>
+    <string name="button_add_contact">Add contact</string>
+    <string name="button_book_search">Book Search</string>
+    <string name="button_cancel">Cancel</string>
+    <string name="button_custom_product_search">Custom search</string>
+    <string name="button_dial">Dial number</string>
+    <string name="button_email">Send email</string>
+    <string name="button_get_directions">Get directions</string>
+    <string name="button_mms">Send MMS</string>
+    <string name="button_ok">OK</string>
+    <string name="button_open_browser">Open browser</string>
+    <string name="button_product_search">Product search</string>
+    <string name="button_search_book_contents">Search contents</string>
+    <string name="button_share_app">Application</string>
+    <string name="button_share_bookmark">Bookmark</string>
+    <string name="button_share_by_email">Share via email</string>
+    <string name="button_share_by_sms">Share via SMS</string>
+    <string name="button_share_clipboard">Clipboard</string>
+    <string name="button_share_contact">Contact</string>
+    <string name="button_show_map">Show map</string>
+    <string name="button_sms">Send SMS</string>
+    <string name="button_web_search">Web search</string>
+    <string name="button_wifi">Connect to Network</string>
+    <string name="contents_contact">Contact info</string>
+    <string name="contents_email">Email address</string>
+    <string name="contents_location">Geographic coordinates</string>
+    <string name="contents_phone">Phone number</string>
+    <string name="contents_sms">SMS address</string>
+    <string name="contents_text">Plain text</string>
+    <string name="history_clear_text">Clear history</string>
+    <string name="history_clear_one_history_text">Clear</string>
+    <string name="history_email_title">Barcode Scanner history</string>
+    <string name="history_empty">Empty</string>
+    <string name="history_empty_detail">No barcode scans have been recorded</string>
+    <string name="history_send">Send history</string>
+    <string name="history_title">History</string>
+    <string name="menu_encode_mecard">Use MECARD</string>
+    <string name="menu_encode_vcard">Use vCard</string>
+    <string name="menu_help">Help</string>
+    <string name="menu_profile">Profile</string>
+    <string name="menu_history">History</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_share">Share</string>
+    <string name="msg_bulk_mode_scanned">Bulk mode: barcode scanned and saved</string>
+    <string name="msg_camera_framework_bug">Sorry, the Android camera encountered a problem. You may need to restart the device.</string>
+    <string name="msg_default_format">Format</string>
+    <string name="msg_default_meta">Metadata</string>
+    <string name="msg_default_mms_subject">Hi</string>
+    <string name="msg_default_status">Place a barcode inside the viewfinder rectangle to scan it.</string>
+    <string name="msg_default_time">Time</string>
+    <string name="msg_default_type">Type</string>
+    <string name="msg_encode_contents_failed">Could not encode a barcode from the data provided.</string>
+    <string name="msg_error">Error</string>
+    <string name="msg_google_books">Google</string>
+    <string name="msg_google_product">Google</string>
+    <string name="msg_intent_failed">Sorry, the requested application could not be launched. The barcode contents may be invalid.</string>
+    <string name="msg_invalid_value">Invalid value</string>
+    <string name="msg_redirect">Redirect</string>
+    <string name="msg_sbc_book_not_searchable">Sorry, this book is not searchable.</string>
+    <string name="msg_sbc_failed">Sorry, the search encountered a problem.</string>
+    <string name="msg_sbc_no_page_returned">No page returned</string>
+    <string name="msg_sbc_page">Page</string>
+    <string name="msg_sbc_results">Results</string>
+    <string name="msg_sbc_searching_book">Searching book\u2026</string>
+    <string name="msg_sbc_snippet_unavailable">Snippet not available</string>
+    <string name="msg_share_explanation">You can share data by displaying a barcode on your screen and scanning it with another phone.</string>
+    <string name="msg_share_text">Or type some text and press Enter</string>
+    <string name="msg_sure">Are you sure?</string>
+    <string name="msg_unmount_usb">Sorry, the SD card is not accessible.</string>
+    <string name="preferences_actions_title">When a barcode is found\u2026</string>
+    <string name="preferences_auto_focus_title">Use auto focus</string>
+    <string name="preferences_auto_open_web_title">Open web pages automatically</string>
+    <string name="preferences_bulk_mode_summary">Scan and save many barcodes continuously</string>
+    <string name="preferences_bulk_mode_title">Bulk scan mode</string>
+    <string name="preferences_copy_to_clipboard_title">Copy to clipboard</string>
+    <string name="preferences_custom_product_search_summary" formatted="false">Substitutions: %s = contents, %f = format, %t = type</string>
+    <string name="preferences_custom_product_search_title">Custom search URL</string>
+    <string name="preferences_decode_1D_industrial_title">1D Industrial</string>
+    <string name="preferences_decode_1D_product_title">1D Product</string>
+    <string name="preferences_decode_Aztec_title">Aztec</string>
+    <string name="preferences_decode_Data_Matrix_title">Data Matrix</string>
+    <string name="preferences_decode_PDF417_title">PDF417 (�)</string>
+    <string name="preferences_decode_QR_title">QR Codes</string>
+    <string name="preferences_device_bug_workarounds_title">Device Bug Workarounds</string>
+    <string name="preferences_disable_barcode_scene_mode_title">No barcode scene mode</string>
+    <string name="preferences_disable_continuous_focus_summary">Use only standard focus mode</string>
+    <string name="preferences_disable_continuous_focus_title">No continuous focus</string>
+    <string name="preferences_disable_exposure_title">No exposure</string>
+    <string name="preferences_disable_metering_title">No metering</string>
+    <string name="preferences_front_light_summary">Improves scanning in low light on some phones, but may cause glare. Does not work on all phones.</string>
+    <string name="preferences_front_light_title">Use front light</string>
+    <string name="preferences_front_light_auto">Automatic</string>
+    <string name="preferences_front_light_off">Off</string>
+    <string name="preferences_front_light_on">On</string>
+    <string name="preferences_general_title">General settings</string>
+    <string name="preferences_history_summary">Store your scans in History</string>
+    <string name="preferences_history_title">Add to History</string>
+    <string name="preferences_invert_scan_title">Invert scan</string>
+    <string name="preferences_invert_scan_summary">Scan for white barcodes on black background. Not available on some devices.</string>
+    <string name="preferences_name">Settings</string>
+    <string name="preferences_orientation_title">No automatic rotation</string>
+    <string name="preferences_play_beep_title">Beep</string>
+    <string name="preferences_remember_duplicates_summary">Store multiple scans of the same barcode in History</string>
+    <string name="preferences_remember_duplicates_title">Remember duplicates</string>
+    <string name="preferences_result_title">Result settings</string>
+    <string name="preferences_scanning_title">When scanning for barcodes, decode\u2026</string>
+    <string name="preferences_search_country">Search country</string>
+    <string name="preferences_supplemental_summary">Try to retrieve more information about the barcode contents</string>
+    <string name="preferences_supplemental_title">Retrieve more info</string>
+    <string name="preferences_vibrate_title">Vibrate</string>
+    <string name="result_address_book">Found contact info</string>
+    <string name="result_calendar">Found calendar event</string>
+    <string name="result_email_address">Found email address</string>
+    <string name="result_geo">Found geographic coordinates</string>
+    <string name="result_isbn">Found book</string>
+    <string name="result_product">Found product</string>
+    <string name="result_sms">Found SMS address</string>
+    <string name="result_tel">Found phone number</string>
+    <string name="result_text">Found plain text</string>
+    <string name="result_uri">Found URL</string>
+    <string name="result_wifi">Found WLAN Configuration</string>
+    <string name="sbc_name">Google Book Search</string>
+    <string name="wifi_changing_network">Requesting connection to network\u2026</string>
+    <string name="facebook_app_id">Facebook App ID</string>
+
+
+    <string name="title_activity_verify">VerifyData</string>
+    <string name="title_activity_homescreen">homescreen</string>
+    <string name="title_activity_registration_page">RegistrationPage</string>
+    <string name="title_activity_user_connect">UserConnect</string>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Strings related to Settings -->
+
+    <!-- Example General settings -->
+    <string name="pref_header_general">General</string>
+
+    <string name="pref_title_social_recommendations">Enable social recommendations</string>
+    <string name="pref_description_social_recommendations">Recommendations for people to contact
+        based on your message history
+    </string>
+
+    <string name="pref_title_display_name">Display name</string>
+    <string name="pref_default_display_name">John Smith</string>
+
+    <string name="pref_title_add_friends_to_messages">Add friends to messages</string>
+    <string-array name="pref_example_list_titles">
+        <item>Always</item>
+        <item>When possible</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_example_list_values">
+        <item>1</item>
+        <item>0</item>
+        <item>-1</item>
+    </string-array>
+
+    <!-- Example settings for Data & Sync -->
+    <string name="pref_header_data_sync">Data &amp; sync</string>
+
+    <string name="pref_title_sync_frequency">Sync frequency</string>
+    <string-array name="pref_sync_frequency_titles">
+        <item>15 minutes</item>
+        <item>30 minutes</item>
+        <item>1 hour</item>
+        <item>3 hours</item>
+        <item>6 hours</item>
+        <item>Never</item>
+    </string-array>
+    <string-array name="pref_sync_frequency_values">
+        <item>15</item>
+        <item>30</item>
+        <item>60</item>
+        <item>180</item>
+        <item>360</item>
+        <item>-1</item>
+    </string-array>
+
+    <string name="pref_title_system_sync_settings">System sync settings</string>
+
+    <!-- Example settings for Notifications -->
+    <string name="pref_header_notifications">Notifications</string>
+
+    <string name="pref_title_new_message_notifications">New message notifications</string>
+
+    <string name="pref_title_ringtone">Ringtone</string>
+    <string name="pref_ringtone_silent">Silent</string>
+
+    <string name="pref_title_vibrate">Vibrate</string>
+
+    <string name="title_activity_user_choice">UserChoice</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_about_us">AboutUs</string>
+    <string name="title_activity_secure_data_store">SecureDataStore</string>
+    <string name="title_activity_inbox_list">InboxList</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+    <string name="search_label">search_label</string>
+    <string name="search_hint">search_hint</string>
+    <string name="settings_description">settings_description</string>
+
+    <!-- Privacy, Licenses, Terms and FAq's-->
+    <string name="nR">Not yet Registered? - Register now to get full access to Ikode SC Reader Settings and improved features.</string>
+    <string name="wholeRegister">- Register now to get full access \n to Ikode SC Reader settings and improved features</string>
+    <string name="title_activity_privacy_policy">Privacy Policy</string>
+    <string name="def_1">•\ the terms \"Personal Information\" or \"Personally Identifiable Information\" means your phone number, email address, and/or user ID information that identify you personally as well as unique device identifiers such as IMEI, MEID, IMSI, or ESN. Geo-location (GPS, WiFi) is a user choice/opt-in, though recommended;</string>
+    <string name="def_2">	•	the terms “Personal Information” and "Personally Identifiable Information” do not include name, technical information (for example, Media Access Control “MAC” address, and Internet Protocol or “IP” address), or numbers or alpha-numeric identifiers assigned by us, third-parties, or your computer. We do not access your text messages or email, call logs, contacts/address book, financial and payment information, health and medical information, photos or videos, Web browsing history and/or apps downloaded or used on your mobile device.</string>
+    <string name="ikona_scope">Your privacy is important to Ikona and we go to great lengths to protect it. This Privacy Policy applies to the online collection of personal information via the IkodeSC Reader® mobile applications operated by Ikona AG and its worldwide affiliated companies and subsidiaries. This Statement does not apply to information collected in any other way, including offline, through Ikona® and Ikode® Websites, or through other Ikona mobile applications. IkodeSC Reader® is a counter-fraud authenticity versification tool and may contain buttons or links to Ikona\'s Counter-fraud Exchanges or to sites maintained by third party Ikode® clients that offer such authenticity verification for their products, documents or services. Whereas the Ikona Counter-fraud Exchange servers are operated and it\'s appropriate security, third party sites are not operated or controlled by Ikona and may have different privacy practices.</string>
+    <string name="how_collect"><![CDATA[•\tWe collect information about our users in the following ways: directly from the user (when registering with us), from our Counter-fraud Exchange server & application logs every time you start to use the IkodeSC Reader® app for user authentication, as well as when you make changes to the app\'s Settings, for instance:]]></string>
+    <string name="collect_1">1.\tA unique user identifier (UUID) we assign to you and visible portrait as a smartcode \tin your Profile and other Activity screens of the IkodeSC Reader® app;</string>
+    <string name="collect_2">2.\tUnique device identifiers such as IMEI, MEID, IMSI, or ESN, MAC address, or similar identifiers;</string>
+    <string name="collect_3">Information or text that you enter in the application;</string>
+    <string name="collect_4">The kind of operating system and mobile device you use, including version number;</string>
+    <string name="collect_5">5.\tOther technical facts regarding your mobile device;</string>
+    <string name="collect_6">6. Language preferences;</string>
+    <string name="collect_7">7.\tThe number of links or buttons you click within the IkodeSC Reader® app;</string>
+    <string name="collect_8">8.\tThe date and time when you log into your app;</string>
+    <string name="collect_9">9.\tThe content of the barcode, or smartcode you decode and request an authenticity \tverification, as well as the verification result sent back to you from such a request.</string>
+    <string name="collect_next_collect">•\tWe use the information, including analytics information, primarily to provide you with mobile application experience that delivers the information, resources, and services that are most relevant and helpful to you and to ensure quality of service, for instance:</string>
+    <string name="collect_next_collect_1">1.\tThe name of your Internet service provider;</string>
+    <string name="collect_next_collect_2">2.\tOther technical facts regarding your network access;</string>
+    <string name="collect_next_collect_3">3.\tThe city, state, and country where you are using the application.</string>
+    <string name="cookie_flash">•\tWe do not collect information about our users through cookies and through the use of local storage, including but no limited to local shared objects or \"flash cookies\".</string>
+    <string name="personal_info">•\tWe do not share your Personal Information, unless we so in this Privacy Policy, or when we believe in good faith that the law requires it.</string>
+    <string name="personal_info_1">•\tWe have implemented certain appropriate security measures to help protect your personal information from accidental loss and from unauthorized access, use, or disclosure.</string>
+    <string name="personal_info_2">•\tWe store the information about you in our Counter-fraud Exchange data center(s) with restricted access and appropriate monitoring.</string>
+    <string name="personal_info_3">•\tWe use intrusion detection and virus protection software.</string>
+    <string name="personal_info_4">•\tDespite these measures, we do not guarantee that unauthorized persons will always be unable to defeat our security measures.</string>
+    <string name="access_1">• We will not sell, rent, or lease mailing lists or other customer data to others, and we will not make your personal information available to any unaffiliated parties, except our approved agents and contractors, or as otherwise described in this Privacy Policy.</string>
+    <string name="access_2">•\tWe rely on some of our affiliates for support of the products and services we offer, and we share some of our back-office functions with other Ikona companies; our affiliates are all required to preserve the confidentiality of any personal information they may access.</string>
+    <string name="access_3">•\tWe will not disclose any personal information or information about your usage of mobile applications to unaffiliated third parties, except as necessary to service the account, to enforce the terms of use, to meet our obligations to content and technology providers, or as required by law, in a matter of public safety or policy, as needed in connection with the transfer of our business assets (for example, if we are acquired by another company or if we are liquidated during bankruptcy proceedings), or if we believe in good faith that sharing the data is necessary to protect our rights or property.</string>
+    <string name="counter_fraud">Your access to our Counter-fraud Exchange server (automatic when you switch on your Ikode SC Reader app and parts of the apps content (for example changing Settings) are password protected. We avoid unnecessary use of your password to avoid potential man-in-the-middle misuse. However, we also recommend that you refrain from disclosing your username, password and ID Token to anyone. Furthermore, we recommend that you sign out of your IkodeSC Reader application at the end of each session especially if you are using a public WiFi in a public place like airports, train stations, coffee shops, malls and supermarkets or Internet cafes.</string>
+    <string name="correct_1">•\tYou may cancel your registration (which will return your app Settings to its basic settings and you may no longer access the Settings in the IkodeSC Reader® app) or update your preferences at any time.</string>
+    <string name="correct_2">•\tCertain unique identifiers used to track usage information of the mobile application will remain the same even after you delete the data associated with the application, or uninstall and reinstall the application. These unique identifiers consist of a number or alpha-numeric string and may be unique to your device, but do NOT contain Personal Information.</string>
+    <string name="correct_3">•\tIf you opted in for receiving information during registration and decided that you do not want to receive relevant information, please update your account preferences (where available), utilize the \"unsubscribe\" mechanism within the communications that you receive from us.</string>
+    <string name="correct_4">•\tIf you have any additional questions or concerns related to this policy and/or our practices, email us at privacy@ikodesoftware.com.</string>
+    <string name="ikona_ag">Ikona AG</string>
+    <string name="street">Rue Robert-Céard 6,</string>
+    <string name="street_1">1204 Genève,</string>
+    <string name="country">Switzerland</string>
+    <string name="privacy_footer">Our Privacy Policy may change at any time. If our information practices change in a significant way, we will post the policy changes here. This Privacy Policy was last updated on February 20, 2016.</string>
+    <string name="termsuse">Ikona\'s Terms of Use for Mobile Apps</string>
+    <string name="termsuse_words">These Terms of Use shall govern your use of our IkodeSC Reader® applications for mobile devices you download, any other Ikona AG \'s online service you access, including any updates, new versions or new releases thereof (any and all of the foregoing are referred to collectively and individually as the “Service”). The Service is provided by Ikona AG (“We” or “Ikona”). YOU ACKNOWLEDGE AND AGREE THAT BY ACCESSING, USING AND/OR DOWNLOADING THE SERVICE, YOU AGREE TO BE LEGALLY BOUND BY AND HEREBY CONSENT TO THESE TERMS OF USE AND THE PRIVACY POLICY. IF YOU DO NOT AGREE TO THESE TERMS OF USE, THEN YOU MAY NOT USE, ACCESS OR DOWNLOAD THE SERVICE.</string>
+    <string name="termsuse_1">1.\tBy accessing the Service, you represent and warrant that you are at least 18 years old or, if younger than 18, are at least 13 or older and have a parent’s or guardian’s permission to access or use the Service.</string>
+    <string name="termsuse_2">2.\tWe reserve the right to change the Terms of Use and/or to modify, discontinue, disable or terminate the Service (or any part or feature thereof) at any time, without prior notice. If we make changes to the Terms of Use we will post an updated version of the Service or provide you with notice of the change. Your continued use of the Service following the posting of such updated version constitutes your acceptance of any changes to the Terms of Use. Please check the Terms of Use area on the Service from time to time to keep apprised of any such updates.</string>
+    <string name="termsuse_3">3.\tYou acknowledge that we may automatically update or upgrade the version of the Service you may be using on your mobile device. You consent to such automatic updating or upgrading on your mobile device, and agree that the Terms of Use will apply to all such updates or upgrades.</string>
+    <string name="termsuse_4">4.\tThe text, photographs, video, graphics, meta data, quotes, data, information, the overall “look and feel”, and all protectable intellectual property available through the Service (“Service Content”) is the property of Ikona and its affiliates. It is provided by Ikona and its affiliates to you for your personal use only. You may not use the Service Content or Service for any commercial purpose. You may not remove, alter, forward, scrape, copy, sell, distribute, retransmit, create derivative works or otherwise make available the Service Content to third parties without our prior written consent. You may not reverse engineer, decompile, disassemble or otherwise attempt to discern the source code or architecture of any feature or component of the Service.</string>
+    <string name="termsuse_5">5.\tYou acknowledge and agree that all intellectual property rights in the Service and the Service Content (in whole and in part), including, but not limited to, all copyright and trademarks, are and shall remain the property of Ikona and its affiliates, and you shall not acquire any rights in them. Except for the limited license expressly set forth herein, you are not conferred any right, by implication, estoppel or otherwise, under copyright or other intellectual property rights, either now or in the future.</string>
+    <string name="termsuse_6">6.\tYou acknowledge and agree that you are subject to any additional terms and conditions (including, without limitation, any user guidelines or rules) posted on the Service in connection with any features, component or Service Content made available through the Service. Any such additional terms and conditions so posted are hereby incorporated by reference into these Terms of Use. Certain additional services may be offered or promoted by Ikona and its affiliates within the Service, but are outside the scope of these Terms of Use and will require a separate agreement with the appropriate Ikona entity.</string>
+    <string name="termsuse_7">7.\tYou may be permitted to register or otherwise create a user account, user name, password and/or user ID (your “Registration”) that allow you to access or receive and/or to participate or utilize certain features of the Service, including features in which you interact with us or other users of our Ikode® counter-fraud tools. You represent and warrant that the information provided in your Registration is complete and accurate to the best of your knowledge, and you will inform us of any changes to your Registration information. You are responsible for the use of any password and/or user ID you create as part of your Registration and for maintaining its confidentiality. You agree that we may use this password and/or user ID to identify you. We reserve the right to deny, restrict or terminate your access to any Service reached via such Registration process for any reason, in our sole discretion.</string>
+    <string name="termsuse_8">8.\tRegistration data and any other information we obtain about you will be used in accordance with our privacy policy. By submitting information to us as part of any Registration, you consent to the transfer of such information outside of your country. We reserve the right to access and disclose any information about you (including personal data given in your Registration) in order to comply with applicable laws, regulations, court orders or lawful governmental requests; to operate our systems properly; and to protect our rights and the safety or interests of others, at our sole discretion.</string>
+    <string name="termsuse_9">9.\tThe Service may have features which allow you to request fraud mitigating authenticity verification of goods, documents or services (“Counter-fraud Services Requests”) from, or via, Ikona, and/or participating third-party entities that have deployed Ikode to protect goods, documents or services against potential fraud. Counter-fraud Services Requests are subject to these Terms of Use and any additional terms that are referred to by our participating third-part entities. You hereby agree not to submit or post any Counter-fraud Services Requests that (a) are illegal, defamatory, offensive or threatening in any way; (b) encourages anyone to break the law; (c) violates anyone’s copyright, trademark or other proprietary right; (d) interferes with the privacy of another user or participating third-party entity; (d) contains a virus or any other harmful components; (e) contains false or misleading statements; or (f) gives rise to any liability or violates any applicable local, or international law or regulation. You represent that you have all the necessary legal rights to submit your Counter-fraud Services Requests and you hereby grant Ikona, and its affiliates and successors, a non-exclusive, transferable, worldwide, fully paid-up, royalty-free, perpetual, irrevocable right and license to use, distribute, publicly perform, display, reproduce, and /or translate your Counter-fraud Services Requests and its resulting authenticity verification result in any and all fraud mitigating media in any manner, in whole or in part, without any duty to notify you. You further irrevocably waive any “moral rights” or other rights with respect to attribution of authorship or integrity of Counter-fraud Services Requests that you may have under any applicable law or legal theory.</string>
+    <string name="termsuse_10">10.\tAs we may store in our database your Counter-fraud Services Requests and/or its authenticity verification result for a reasonable time we have no obligation to extend storage beyond this reasonable time and may remove or delete any Counter-fraud Services Requests and/or its authenticity verification result for any reason, at such time and without notice to you.</string>
+    <string name="termsuse_11">11.\tWe respond to notices of alleged infringement that comply with the Digital Millennium Copyright Act. Please see our copyright notice for more information.</string>
+    <string name="termsuse_12">12.\tWe do not guarantee the timeliness or accuracy of the Ikode authenticity verification services by/via Ikona or by any participating third party entity. You agree that we are not responsible for, and do not control such third-party authenticity verification services.</string>
+    <string name="termsuse_13">13.\tThe Service and Service Content are provided for fraud mitigating purposes only. You understand and agree that the Service does not provide warrant or any legal commitment to stop fraud. Neither we nor our affiliates shall be liable for any errors, inaccuracies or delays in the Service or any Service Content, or for any actions taken by you in reliance thereon. You expressly agree that your use of the Service and the Service Content is at your sole risk.</string>
+    <string name="termsuse_14">14.\tYOU AGREE THAT YOUR ACCESS TO AND USE OF THE SERVICE IS ON AN “AS IS” AND “AS AVAILABLE” BASIS. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, WE EXPRESSLY DISCLAIM ANY REPRESENTATION OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY REPRESENTATIONS OR WARRANTIES OF PERFORMANCE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, RELIABILITY AND NON-INFRINGEMENT. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, WE DISCLAIM ALL RESPONSIBILITY FOR ANY LOSS, INJURY CLAIM, LIABILITY, OR DAMAGE OF ANY KIND RESULTING FROM OR RELATED TO ACCESS, USE OR THE UNAVAILABILITY OF THE SERVICE (OR ANY PART THEREOF).</string>
+    <string name="termsuse_15">15.\tTO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IKONA, ITS SUBSIDIARIES, ITS AFFILIATES AND THEIR RESPECTIVE SHAREHOLDERS, DIRECTORS, OFFICERS, EMPLOYEES, AGENTS, ADVERTISERS, CONTENT PROVIDERS AND LICENSORS (COLLECTIVELY, THE “IKONA PARTIES”) WILL NOT BE LIABLE (JOINTLY OR SEVERALLY) TO YOU FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, SPECIAL, INCIDENTAL, PUNITIVE OR EXEMPLARY DAMAGES, INCLUDING WITHOUT LIMITATION, LOST PROFITS, LOST SAVINGS AND LOST REVENUES, WHETHER IN NEGLIGENCE, TORT, CONTRACT OR ANY OTHER THEORY OF LIABILITY, EVEN IF THE IKONA PARTIES HAVE BEEN ADVISED OF THE POSSIBILITY OR COULD HAVE FORESEEN ANY SUCH DAMAGES.</string>
+    <string name="termsuse_16">16.\tThe Service, or components thereof, may be subject to European Union and/or United States export controls. No Service may be downloaded or otherwise exported or re-exported into (or to a national or resident of) any country to which the European Union and or United States has embargoed goods. By using the Service, you represent and warrant that you are not located in, under the control of, or a national or resident of any such country.</string>
+    <string name="termsuse_17">17.\tThese Terms of Use contains the entire agreement between us regarding your use of the Service and supersedes all previous agreements. Should any provision of the Terms of Use be held to be void, invalid, unenforceable or illegal by a court, the validity and enforceability of the other provisions will not be affected thereby. Failure to enforce any provision of the Terms of Use will not constitute or be construed as a waiver of such provision or the right to enforce it. The Terms of Use shall be governed by and construed in accordance with the laws of Switzerland, without giving effect to any principles of conflicts of law. You hereby agree that any disputes arising under or in connection with the Terms of Use or the Service shall be submitted for resolution to courts in Geneva in Switzerland, and you hereby waive any jurisdictional, venue or inconvenient forum objections to such courts. The United National Convention on the International Sale of Goods shall not apply to the Terms of Use or the Service.</string>
+    <string name="termsfooter">Our Terms of Use for Mobile Apps may change at any time. If our information practices change in a significant way, we will post the policy changes here. This Terms of Use for Mobile Apps was last updated on January 26, 2016.</string>
+    <string name="licenseseach">© Copyright 2016, Ikona AG</string>
+    <string name="apacheLicense">1. Apache License, version 2.0</string>
+    <string name="ikonaHeading">2. Ikona End-User License (EULA)</string>
+    <string name="read_license">Please read this End-User License Agreement ("Agreement") carefully before downloading or using our IkodeSC Reader® for mobile devices ("Application").</string>
+    <string name="downloading_license">By downloading or using the Application, you are agreeing to be bound by the terms and conditions of this Agreement,
+our more detailed "Terms of Use" agreement and our "Privacy Policy", which you find in the individual Terms of Use
+and Privacy Policy files in this application. If you do not agree to the terms of this Agreement, the Terms of Use and the
+Privacy Policy, do not download or use the Application.</string>
+    <string name="licenseapply">To apply the Apache License to our own work, attach the following boilerplate notice. The text should be enclosed in the appropriate comment syntax for the file format. The file or class name and description of purpose be included on the  same \"printed page\" as the copyright notice for easier identification within third-party archives.</string>
+    <string name="licensecopyright"><![CDATA[<!--  Copyright © 2016 Ikona (Labuan) Ltd.   Licensed under the Apache License, Version 2.0 (the \"License\");  you may not use this file except in compliance with the License.  You may obtain a copy of the License at        http://www.apache.org/licenses/LICENSE-2.0   Unless required by applicable law or agreed to in writing, software  distributed under the License is distributed on an \"AS IS\" BASIS,  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the License for the specific language governing permissions and  limitations under the License.   ======================================================================== [add the application component / file name] ======================================================================== →]]></string>
+    <string name="eula">End-User License Agreement (\"Agreement\")</string>
+    <string name="ltd">(c) Ikona (Labuan) Ltd.</string>
+    <string name="licensepleaseread">Please read this End-User License Agreement (\"Agreement\") carefully before downloading or using our IkodeSC Reader® for mobile devices (\"Application\").</string>
+    <string name="licensedwnld">By downloading or using the Application, you are agreeing to be bound by the terms and conditions of this Agreement, our more detailed \"Terms of Use\" agreement and our \"Privacy Policy\", which you find in the individual Terms of Use and Privacy Policy files in this application. If you do not agree to the terms of this Agreement, the Terms of Use and the Privacy Policy, do not download or use the Application.</string>
+    <string name="license_1">Ikona AG grants you a revocable, non­exclusive, non­transferable, limited license to download, install and use the Application solely for your personal, non­commercial purposes strictly in accordance with the terms of this Agreement.</string>
+    <string name="restrict_1">You agree not to, and you will not permit others to license, sell, rent, lease, assign, distribute, transmit, host, outsource, disclose or otherwise commercially exploit the Application or make the Application available to any third party.</string>
+    <string name="modify_1">Ikona AG reserves the right to modify, suspend or discontinue, temporarily or permanently, the Application or any service to which it connects, with or without notice and without liability to you.</string>
+    <string name="terms_1">This Agreement shall remain in effect until terminated by you or Ikona AG. Ikona AG may, in its sole discretion, at any time and for any or no reason, suspend or terminate this Agreement with or without prior notice.</string>
+    <string name="terms_2">This Agreement will terminate immediately, without prior notice from Ikona AG, in the event that you fail to comply with any provision of this Agreement. You may also terminate this Agreement by deleting the Application and all copies thereof from your mobile device.</string>
+    <string name="terms_3">Upon termination of this Agreement, you shall cease all use of the Application and delete all copies of the Application from your mobile device.</string>
+    <string name="sev_1">If any provision of this Agreement is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.</string>
+    <string name="ammend_1">kona AG reserves the right, at its sole discretion, to modify or replace this Agreement at any time. If a revision is material we will provide at least 15 days\' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</string>
+    <string name="contact_info">If you have any questions about this Agreement, please contact us by email at support@ikonasoftware.com</string>
+    <string name="license_footer">Last updated: January 26, 2016</string>
+    <string name="download_license">By downloading or using the Application, you are agreeing to be bound by the terms and conditions of this Agreement, our more detailed \"Terms of Use\" agreement and our \"Privacy Policy\", which you find in the individual Terms of Use and Privacy Policy files in this application. If you do not agree to the terms of this Agreement, the Terms of Use and the Privacy Policy, do not download or use the Application.</string>
+    <string name="license_grant">Ikona AG grants you a revocable, non-exclusive, non-transferable, limited license to download, install and use the Application solely for your personal, non-commercial purposes strictly in accordance with the terms of this Agreement.</string>
+    <string name="restriction_1">You agree not to, and you will not permit others to license, sell, rent, lease, assign, distribute, transmit, host, outsource, disclose or otherwise commercially exploit the Application or make the Application available to any third party.</string>
+    <string name="modification_1">Ikona AG reserves the right to modify, suspend or discontinue, temporarily or permanently, the Application or any service to which it connects, with or without notice and without liability to you.</string>
+    <string name="termi_1">This Agreement shall remain in effect until terminated by you or Ikona AG. Ikona AG may, in its sole discretion, at any time and for any or no reason, suspend or terminate this Agreement with or without prior notice.</string>
+    <string name="termi_2">This Agreement will terminate immediately, without prior notice from Ikona AG, in the event that you fail to comply with any provision of this Agreement. You may also terminate this Agreement by deleting the Application and all copies thereof from your mobile device.</string>
+    <string name="termi_3">Upon termination of this Agreement, you shall cease all use of the Application and delete all copies of the Application from your mobile device.</string>
+    <string name="severi_1">If any provision of this Agreement is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.</string>
+    <string name="ammendment_1">Ikona AG reserves the right, at its sole discretion, to modify or replace this Agreement at any time. If a revision is material we will provide at least 15 days\' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</string>
+    <string name="contact_1">If you have any questions about this Agreement, please contact us by email at support@ikonasoftware.com</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="apacheText">Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at \n\nhttp://www.apache.org/licenses/LICENSE-2.0 \n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</string>
+    <string name="licenseseach2">© Ikona AG All Rights Reserved 2016.</string>
+
+
+    <!--from previous -->
+
+    <string name="app_name">Ikode SC Reader</string>
+    <string name="ifsome">\"if something sounds too good to be true, it is most likely is\".</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_registration">Registration</string>
+    <string name="title_activity_verification">Verification</string>
+
+    <!-- Strings related to login -->
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+
+    <!-- Strings related to login & registration by Ikode customised-->
+    <string name="prompt_token">Provide token </string>
+    <string name="action_login">Sign in to Profile</string>
+    <string name="action_verify">Verify Token</string>
+
+    <!-- Strings related to login by Ikode customised-->
+    <string name="verification_text"> Is this your passphrase? if YES, please enter your verification code. Otherwise, Click cancel or GO back to the main screen </string>
+    <string name="title_activity_about">About this App</string>
+    <string name="title_activity_splash">Welcome</string>
+    <string name="title_activity_home">Main</string>
+    <string name="title_activity_user_profile">UserProfile</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="eulalabel">End User License Agreement</string>
+    <string name="copyrightlabel">© Copyright 2016, Ikona AG</string>
+    <string name="apachelicensetext">Licensed under the Apache License, Version 2.0 (the \"License\"); you may not use this file except in compliance with the License. You may obtain a copy of the License at \n\nhttp://www.apache.org/licenses/LICENSE-2.0 \n\nUnless required by applicable law or agreed to in writing, software distributed under the License is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the License for the specific language governing permissions and limitations under the License.</string>
+    <string name="allrights">© Ikona AG All Rights Reserved 2016</string>
+    <string name="pleaseread">Please read this End-User License Agreement (\"Agreement\") carefully before downloading or using our IkodeSC Reader® for mobile devices (\"Application\").\n\nBy downloading or using the Application, you are agreeing to be bound by the terms and conditions of this Agreement, our more detailed \"Terms of Use\" agreement and our \"Privacy Policy\", which you find in the individual Terms of Use and Privacy Policy files in this application. If you do not agree to the terms of this Agreement, the Terms of Use and the Privacy Policy, do not download or use the Application.</string>
+    <string name="licenseLabel">License</string>
+    <string name="licenseText">Ikona AG grants you a revocable, non¬exclusive, non¬transferable, limited license to download, install and use the Application solely for your personal, non¬commercial purposes strictly in accordance with the terms of this Agreement.</string>
+    <string name="restrictionLabel">Restrictions</string>
+    <string name="restrictionText">You agree not to, and you will not permit others to license, sell, rent, lease, assign, distribute, transmit, host, outsource, disclose or otherwise commercially exploit the Application or make the Application available to any third party.</string>
+    <string name="modificationLabel">Modifications to Application</string>
+    <string name="modificationText">Ikona AG reserves the right to modify, suspend or discontinue, temporarily or permanently, the Application or any service to which it connects, with or without notice and without liability to you.</string>
+    <string name="termLabel">Term and Termination</string>
+    <string name="termText">This Agreement shall remain in effect until terminated by you or Ikona AG. Ikona AG may, in its sole discretion, at any time and for any or no reason, suspend or terminate this Agreement with or without prior notice.  This Agreement will terminate immediately, without prior notice from Ikona AG, in the event that you fail to comply with any provision of this Agreement. You may also terminate this Agreement by deleting the Application and all copies thereof from your mobile device.  Upon termination of this Agreement, you shall cease all use of the Application and delete all copies of the Application from your mobile device.</string>
+    <string name="severability">Severability</string>
+    <string name="severabilityText">If any provision of this Agreement is held to be unenforceable or invalid, such provision will be changed and interpreted to accomplish the objectives of such provision to the greatest extent possible under applicable law and the remaining provisions will continue in full force and effect.</string>
+    <string name="ammendmentsLabel">Amendments to this Agreement</string>
+    <string name="ammendmentText">Ikona AG reserves the right, at its sole discretion, to modify or replace this Agreement at any time. If a revision is material we will provide at least 15 days\' notice prior to any new terms taking effect. What constitutes a material change will be determined at our sole discretion.</string>
+    <string name="contactInfoLabel">Contact Information</string>
+    <string name="contactText">If you have any questions about this Agreement, please contact us by email at support@ikonasoftware.com.</string>
+    <string name="ikonaAddress">Ikona AG Rue Robert-Céard 6, 1204 Genève, Switzerland</string>
+    <string name="updateInfo">Last updated: January 26, 2016</string>
+    <string name="scopeLabel">Scope</string>
+    <string name="scopeText">Your privacy is important to Ikona and we go to great lengths to protect it. This Privacy Policy applies to the online collection of personal information via the IkodeSC Reader® mobile applications operated by Ikona AG and its worldwide affiliated companies and subsidiaries. This Statement does not apply to information collected in any other way, including offline, through Ikona® and Ikode® Websites, or through other Ikona mobile applications. IkodeSC Reader® is a counter-fraud authenticity versification tool and may contain buttons or links to Ikona\'s Counter-fraud Exchanges or to sites maintained by third party Ikode® clients that offer such authenticity verification for their products, documents or services. Whereas the Ikona Counter-fraud Exchange servers are operated and it\'s appropriate security, third party sites are not operated or controlled by Ikona and may have different privacy practices.</string>
+    <string name="definitionsLabel">Definitions</string>
+    <string name="definitionsText">In this Privacy Policy statement \n•\tThe terms \"Personal Information\" or \"Personally Identifiable Information\" means your phone number, email address, and/or user ID information that identify you personally as well as unique device identifiers such as IMEI, MEID, IMSI, or ESN. Geo-location (GPS, WiFi) is a user choice/opt-in, though recommended; \n•\tThe terms “Personal Information” and \"Personally Identifiable Information” do not include name, technical information (for example, Media Access Control “MAC” address, and Internet Protocol or “IP” address), or numbers or alpha-numeric identifiers assigned by us, third-parties, or your computer. We do not access your text messages or email, call logs, contacts/address book, financial and payment information, health and medical information, photos or videos, Web browsing history and/or apps downloaded or used on your mobile device.</string>
+    <string name="highlightsLabel">Highlights</string>
+    <string name="highlightsText1">What information is collected and how is that information used?</string>
+    <string name="highlightsText2"><![CDATA[What information is collected and how is that information used? •\tWe collect information about our users in the following ways: directly from the user (when registering with us), from our Counter-fraud Exchange server & application logs every time you start to use the IkodeSC Reader® app for user authentication, as well as when you make changes to the app\'s Settings, for instance: 1.\tA unique user identifier (UUID) we assign to you and visible portrait as a smartcode \tin your Profile and other Activity screens of the IkodeSC Reader® app; 2.\tUnique device identifiers such as IMEI, MEID, IMSI, or ESN, MAC address, or similar \tidentifiers; 3.\tInformation or text that you enter in the application; 4.\tThe kind of operating system and mobile device you use, including version number; 5.\tOther technical facts regarding your mobile device; 6.\tLanguage preferences; 7.\tThe number of links or buttons you click within the IkodeSC Reader® app; 8.\tThe date and time when you log into your app; 9.\tThe content of the barcode, or smartcode you decode and request an authenticity \tverification, as well as the verification result sent back to you from such a request. •\tWe use the information, including analytics information, primarily to provide you with mobile application experience that delivers the information, resources, and services that are most relevant and helpful to you and to ensure quality of service, for instance: 1.\tThe name of your Internet service provider; 2.\tOther technical facts regarding your network access; 3.\tThe city, state, and country where you are using the application. •\tWe do not collect information about our users through cookies and through the use of local storage, including but no limited to local shared objects or \"flash cookies\". •\tWe do not share your Personal Information, unless we so in this Privacy Policy, or when we believe in good faith that the law requires it.]]></string>
+    <string name="highlightsText3">How is my personal information protected?</string>
+    <string name="highlightsText4">•\tWe have implemented certain appropriate security measures to help protect your personal information from accidental loss and from unauthorized access, use, or disclosure. •\tWe store the information about you in our Counter-fraud Exchange data center(s) with restricted access and appropriate monitoring. •\tWe use intrusion detection and virus protection software. •\tDespite these measures, we do not guarantee that unauthorized persons will always be unable to defeat our security measures.</string>
+    <string name="highlightsText5">Who has access to the personal information?</string>
+    <string name="highlightsText6">•\tWe will not sell, rent, or lease mailing lists or other customer data to others, and we will not make your personal information available to any unaffiliated parties, except our approved agents and contractors, or as otherwise described in this Privacy Policy. •\tWe rely on some of our affiliates for support of the products and services we offer, and we share some of our back-office functions with other Ikona companies; our affiliates are all required to preserve the confidentiality of any personal information they may access. •\tWe will not disclose any personal information or information about your usage of mobile applications to unaffiliated third parties, except as necessary to service the account, to enforce the terms of use, to meet our obligations to content and technology providers, or as required by law, in a matter of public safety or policy, as needed in connection with the transfer of our business assets (for example, if we are acquired by another company or if we are liquidated during bankruptcy proceedings), or if we believe in good faith that sharing the data is necessary to protect our rights or property.  Your access to our Counter-fraud Exchange server (automatic when you switch on your Ikode SC Reader app and parts of the apps content (for example changing Settings) are password protected. We avoid unnecessary use of your password to avoid potential man-in-the-middle misuse. However, we also recommend that you refrain from disclosing your username, password and ID Token to anyone. Furthermore, we recommend that you sign out of your IkodeSC Reader application at the end of each session especially if you are using a public WiFi in a public place like airports, train stations, coffee shops, malls and supermarkets or Internet cafes.</string>
+    <string name="highlightsText7">How may I correct, amend, or delete my personal information, or update my preferences?</string>
+    <string name="highlightsText8">•\tYou may cancel your registration (which will return your app Settings to its basic settings and you may no longer access the Settings in the IkodeSC Reader® app) or update your preferences at any time. •\tCertain unique identifiers used to track usage information of the mobile application will remain the same even after you delete the data associated with the application, or uninstall and reinstall the application. These unique identifiers consist of a number or alpha-numeric string and may be unique to your device, but do NOT contain Personal Information. •\tIf you opted in for receiving information during registration and decided that you do not want to receive relevant information, please update your account preferences (where available), utilize the \"unsubscribe\" mechanism within the communications that you receive from us. •\tIf you have any additional questions or concerns related to this policy and/or our practices, email us at privacy@ikodesoftware.com.</string>
+    <string name="privacyInfo">Our Privacy Policy may change at any time. If our information practices change in a significant way, we will post the policy changes here. This Privacy Policy was last updated on January 26, 2016.</string>
+    <string name="termsofUseMobile">Ikona\'s Terms of Use for Mobile Apps</string>
+    <string name="termsText">These Terms of Use shall govern your use of our IkodeSC Reader® applications for mobile devices you download, any other Ikona AG \'s online service you access, including any updates, new versions or new releases thereof (any and all of the foregoing are referred to collectively and individually as the “Service”). The Service is provided by Ikona AG (“We” or “Ikona”). YOU ACKNOWLEDGE AND AGREE THAT BY ACCESSING, USING AND/OR DOWNLOADING THE SERVICE, YOU AGREE TO BE LEGALLY BOUND BY AND HEREBY CONSENT TO THESE TERMS OF USE AND THE PRIVACY POLICY. IF YOU DO NOT AGREE TO THESE TERMS OF USE, THEN YOU MAY NOT USE, ACCESS OR DOWNLOAD THE SERVICE.</string>
+    <string name="termsText1">1.\tBy accessing the Service, you represent and warrant that you are at least 18 years old or, if younger than 18, are at least 13 or older and have a parent’s or guardian’s permission to access or use the Service. 2.\tWe reserve the right to change the Terms of Use and/or to modify, discontinue, disable or terminate the Service (or any part or feature thereof) at any time, without prior notice. If we make changes to the Terms of Use we will post an updated version of the Service or provide you with notice of the change. Your continued use of the Service following the posting of such updated version constitutes your acceptance of any changes to the Terms of Use. Please check the Terms of Use area on the Service from time to time to keep apprised of any such updates. 3.\tYou acknowledge that we may automatically update or upgrade the version of the Service you may be using on your mobile device. You consent to such automatic updating or upgrading on your mobile device, and agree that the Terms of Use will apply to all such updates or upgrades. 4.\tThe text, photographs, video, graphics, meta data, quotes, data, information, the overall “look and feel”, and all protectable intellectual property available through the Service (“Service Content”) is the property of Ikona and its affiliates. It is provided by Ikona and its affiliates to you for your personal use only. You may not use the Service Content or Service for any commercial purpose. You may not remove, alter, forward, scrape, copy, sell, distribute, retransmit, create derivative works or otherwise make available the Service Content to third parties without our prior written consent. You may not reverse engineer, decompile, disassemble or otherwise attempt to discern the source code or architecture of any feature or component of the Service. 5.\tYou acknowledge and agree that all intellectual property rights in the Service and the Service Content (in whole and in part), including, but not limited to, all copyright and trademarks, are and shall remain the property of Ikona and its affiliates, and you shall not acquire any rights in them. Except for the limited license expressly set forth herein, you are not conferred any right, by implication, estoppel or otherwise, under copyright or other intellectual property rights, either now or in the future. 6.\tYou acknowledge and agree that you are subject to any additional terms and conditions (including, without limitation, any user guidelines or rules) posted on the Service in connection with any features, component or Service Content made available through the Service. Any such additional terms and conditions so posted are hereby incorporated by reference into these Terms of Use. Certain additional services may be offered or promoted by Ikona and its affiliates within the Service, but are outside the scope of these Terms of Use and will require a separate agreement with the appropriate Ikona entity. 7.\tYou may be permitted to register or otherwise create a user account, user name, password and/or user ID (your “Registration”) that allow you to access or receive and/or to participate or utilize certain features of the Service, including features in which you interact with us or other users of our Ikode® counter-fraud tools. You represent and warrant that the information provided in your Registration is complete and accurate to the best of your knowledge, and you will inform us of any changes to your Registration information. You are responsible for the use of any password and/or user ID you create as part of your Registration and for maintaining its confidentiality. You agree that we may use this password and/or user ID to identify you. We reserve the right to deny, restrict or terminate your access to any Service reached via such Registration process for any reason, in our sole discretion. 8.\tRegistration data and any other information we obtain about you will be used in accordance with our privacy policy. By submitting information to us as part of any Registration, you consent to the transfer of such information outside of your country. We reserve the right to access and disclose any information about you (including personal data given in your Registration) in order to comply with applicable laws, regulations, court orders or lawful governmental requests; to operate our systems properly; and to protect our rights and the safety or interests of others, at our sole discretion. 9.\tThe Service may have features which allow you to request fraud mitigating authenticity verification of goods, documents or services (“Counter-fraud Services Requests”) from, or via, Ikona, and/or participating third-party entities that have deployed Ikode to protect goods, documents or services against potential fraud. Counter-fraud Services Requests are subject to these Terms of Use and any additional terms that are referred to by our participating third-part entities. You hereby agree not to submit or post any Counter-fraud Services Requests that (a) are illegal, defamatory, offensive or threatening in any way; (b) encourages anyone to break the law; (c) violates anyone’s copyright, trademark or other proprietary right; (d) interferes with the privacy of another user or participating third-party entity; (d) contains a virus or any other harmful components; (e) contains false or misleading statements; or (f) gives rise to any liability or violates any applicable local, or international law or regulation. You represent that you have all the necessary legal rights to submit your Counter-fraud Services Requests and you hereby grant Ikona, and its affiliates and successors, a non-exclusive, transferable, worldwide, fully paid-up, royalty-free, perpetual, irrevocable right and license to use, distribute, publicly perform, display, reproduce, and /or translate your Counter-fraud Services Requests and its resulting authenticity verification result in any and all fraud mitigating media in any manner, in whole or in part, without any duty to notify you. You further irrevocably waive any “moral rights” or other rights with respect to attribution of authorship or integrity of Counter-fraud Services Requests that you may have under any applicable law or legal theory. 10.\tAs we may store in our database your Counter-fraud Services Requests and/or its authenticity verification result for a reasonable time we have no obligation to extend storage beyond this reasonable time and may remove or delete any Counter-fraud Services Requests and/or its authenticity verification result for any reason, at such time and without notice to you. 11.\tWe respond to notices of alleged infringement that comply with the Digital Millennium Copyright Act. Please see our copyright notice for more information. 12.\tWe do not guarantee the timeliness or accuracy of the Ikode authenticity verification services by/via Ikona or by any participating third party entity. You agree that we are not responsible for, and do not control such third-party authenticity verification services. 13.\tThe Service and Service Content are provided for fraud mitigating purposes only. You understand and agree that the Service does not provide warrant or any legal commitment to stop fraud. Neither we nor our affiliates shall be liable for any errors, inaccuracies or delays in the Service or any Service Content, or for any actions taken by you in reliance thereon. You expressly agree that your use of the Service and the Service Content is at your sole risk. 14.\tYOU AGREE THAT YOUR ACCESS TO AND USE OF THE SERVICE IS ON AN “AS IS” AND “AS AVAILABLE” BASIS. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, WE EXPRESSLY DISCLAIM ANY REPRESENTATION OR WARRANTIES, EXPRESS OR IMPLIED, INCLUDING WITHOUT LIMITATION ANY REPRESENTATIONS OR WARRANTIES OF PERFORMANCE, MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, ACCURACY, COMPLETENESS, RELIABILITY AND NON-INFRINGEMENT. TO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, WE DISCLAIM ALL RESPONSIBILITY FOR ANY LOSS, INJURY CLAIM, LIABILITY, OR DAMAGE OF ANY KIND RESULTING FROM OR RELATED TO ACCESS, USE OR THE UNAVAILABILITY OF THE SERVICE (OR ANY PART THEREOF). 15.\tTO THE FULLEST EXTENT PERMITTED BY APPLICABLE LAW, IKONA, ITS SUBSIDIARIES, ITS AFFILIATES AND THEIR RESPECTIVE SHAREHOLDERS, DIRECTORS, OFFICERS, EMPLOYEES, AGENTS, ADVERTISERS, CONTENT PROVIDERS AND LICENSORS (COLLECTIVELY, THE “IKONA PARTIES”) WILL NOT BE LIABLE (JOINTLY OR SEVERALLY) TO YOU FOR ANY DIRECT, INDIRECT, CONSEQUENTIAL, SPECIAL, INCIDENTAL, PUNITIVE OR EXEMPLARY DAMAGES, INCLUDING WITHOUT LIMITATION, LOST PROFITS, LOST SAVINGS AND LOST REVENUES, WHETHER IN NEGLIGENCE, TORT, CONTRACT OR ANY OTHER THEORY OF LIABILITY, EVEN IF THE IKONA PARTIES HAVE BEEN ADVISED OF THE POSSIBILITY OR COULD HAVE FORESEEN ANY SUCH DAMAGES. 16.\tThe Service, or components thereof, may be subject to European Union and/or United States export controls. No Service may be downloaded or otherwise exported or re-exported into (or to a national or resident of) any country to which the European Union and or United States has embargoed goods. By using the Service, you represent and warrant that you are not located in, under the control of, or a national or resident of any such country. 17.\tThese Terms of Use contains the entire agreement between us regarding your use of the Service and supersedes all previous agreements. Should any provision of the Terms of Use be held to be void, invalid, unenforceable or illegal by a court, the validity and enforceability of the other provisions will not be affected thereby. Failure to enforce any provision of the Terms of Use will not constitute or be construed as a waiver of such provision or the right to enforce it. The Terms of Use shall be governed by and construed in accordance with the laws of Switzerland, without giving effect to any principles of conflicts of law. You hereby agree that any disputes arising under or in connection with the Terms of Use or the Service shall be submitted for resolution to courts in Geneva in Switzerland, and you hereby waive any jurisdictional, venue or inconvenient forum objections to such courts. The United National Convention on the International Sale of Goods shall not apply to the Terms of Use or the Service.</string>
+    <string name="termsInfo">Our Terms of Use for Mobile Apps may change at any time. If our information practices change in a significant way, we will post the policy changes here. This Terms of Use for Mobile Apps was last updated on January 26, 2016.</string>
+    <string name="action_forgot_password">Forgot your token?</string>
+    <string name="title_activity_user_profile_final">UserProfileFinal</string>
+    <string name="title_activity_secure_data_store_final">SecureDataStoreFinal</string>
+    <string name="title_activity_demos">Demos</string>
+    <string name="demo_app_migrant">Migrants List</string>
+
+</resources>
+>>>>>>> Stashed changes

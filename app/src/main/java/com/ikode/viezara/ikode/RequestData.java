@@ -10,17 +10,21 @@ public class RequestData {
     public static final String URL_GET_USER = "http://219.89.205.123/ikode/v1/login";
     public static final String URL_CREATE_USER = "http://219.89.205.123/ikode/v1/register";*/
 
-    /*//local
-    public static final String URL_GET_DATA = "http://10.0.0.9:8080/REST/v1/check";
-    public static final String URL_GET_USER = "http://10.0.0.9:8080/REST/v1/login";
-    public static final String URL_CREATE_USER = "http://10.0.0.9:8080/REST/v1/register";
-    public static final String URL_CONNECTION = "http://10.0.0.9:8080/REST/v1/connection";*/
+    /*local
+    public static final String URL_GET_DATA = "http://192.168.1.69/ikode/v1/check";
+    public static final String URL_GET_USER = "http://192.168.1.69/ikode/v1/login";
+    public static final String URL_CREATE_USER = "http://192.168.1.69/ikode/v1/register";
+    public static final String URL_CONNECTION = "http://192.168.1.69/ikode/v1/connection";
+    public static final String URL_REQUEST_TOKEN = "http://192.168.1.69/ikode/v1/requestToken";
+    */
 
+    /*Online*/
     public static final String URL_GET_DATA = "http://219.89.205.123/ikode/v1/check";
     public static final String URL_GET_USER = "http://219.89.205.123/ikode/v1/login";
     public static final String URL_CREATE_USER = "http://219.89.205.123/ikode/v1/register";
     public static final String URL_CONNECTION = "http://219.89.205.123/ikode/v1/connection";
     public static final String URL_REQUEST_TOKEN = "http://219.89.205.123/ikode/v1/requestToken";
+
 
     public static final String URL_GET_SECURITY_NUMBER="http://219.89.205.123/android/getSecurityNumber.php?securityNumber=";
     public static final String URL_GET_DATA_IMAGE = "http://219.89.205.123/android/getDataImage.php?id=";
@@ -69,8 +73,39 @@ public class RequestData {
     public static String storedEmail="";
     public static String user_Registered="false";
 
+    //API KEYS
+    public static String API_SECRET_KEY = "";
+    public static String ENCRYPTED_API = "";
+    public static String SERVER_PUBLIC_SECRET_KEY = "";
+    public static String ENCRYPTED_SERVER_PUBLIC_KEY = "";
+
+    public static String API_KEY = "";
+    public static String SERVER_PUBLIC_KEY = "";
+    public static final String scan_qr = "scan_qr";
+
+
+    public static String ref_id = "";
+    public static String ref_name = "";
+    public static String ref_dob = "Date of birth : ";
+    public static String ref_cc = "Country origin : ";
+    public static String ref_date = "Registration date: ";
+    public static String ref_stat = "Refugee status : ";
+    public static String ref_place = " Registration place : ";
+    public static String ref_img = "";
+
     //Privacy Option
     public static boolean accepted_Privacy= false;
+
+    public static void clearRefugee() {
+        ref_id = "";
+        ref_name = "";
+        ref_dob = "Date of birth : ";
+        ref_cc = "Country origin : ";
+        ref_date = "Registration date: ";
+        ref_stat = "Refugee status : ";
+        ref_place = " Registration place : ";
+        ref_img = "";
+    }
 
 
 

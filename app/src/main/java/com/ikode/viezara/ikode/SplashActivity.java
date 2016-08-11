@@ -1,7 +1,9 @@
 package com.ikode.viezara.ikode;
 
+import android.app.ProgressDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
@@ -14,6 +16,7 @@ import android.text.SpannableString;
 import android.text.method.LinkMovementMethod;
 import android.text.style.ForegroundColorSpan;
 import android.text.style.StyleSpan;
+import android.util.Log;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 
@@ -23,7 +26,6 @@ import org.json.JSONObject;
 import java.util.HashMap;
 import java.util.Timer;
 import java.util.TimerTask;
-
 
 
 public class SplashActivity extends AppCompatActivity implements OnProgressBarListener {
@@ -47,6 +49,11 @@ public class SplashActivity extends AppCompatActivity implements OnProgressBarLi
     private static final String TAG = "myApp";
 
     private TextView iklsplash;
+
+    private static SharedPreferences sharedPreferences;
+    private static SharedPreferences.Editor sharedPreferencesEditor;
+
+    private static boolean chkNewPair;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -91,13 +98,88 @@ public class SplashActivity extends AppCompatActivity implements OnProgressBarLi
                     runOnUiThread(new Runnable() {
                         @Override
                         public void run() {
-                        iProgress1.incrementProgressBy(2);
-                        jumpTime += 2;
-                        //Log.v(TAG, "jumpTime "+ jumpTime);
-                        if (jumpTime == 100) {
-                            display();
-                            onFinish();
-                        }
+
+
+                            iProgress1.incrementProgressBy(2);
+                            jumpTime += 2;
+                            //Log.v(TAG, "jumpTime "+ jumpTime);
+                            if (jumpTime == 50) {
+                                display();
+
+                                /*
+                                Intent i = new Intent(SplashActivity.this, homescreen.class);
+                                SplashActivity.this.startActivityForResult(i, 1);
+                                onBackPressed();*/
+
+                                //Send Data to server
+                            /*
+                            try{
+                                UserAesCryptography userAES = new UserAesCryptography();
+                                UserRsaCryptography userRSA= new UserRsaCryptography();
+                                DataService data_serv= new DataService();
+
+                                SecretKey secret = userAES.generateKey();
+                                String strKey = userAES.convertSecretKeyToString(secret);
+                                //String encryptAES = userAES.encryptMessage(secret, "xJ9OsDKQDFbqAV1NezGybA== oqNTxzMJnih5FkrffV9nzg==");
+                                String encryptAES = userAES.encryptMessage(secret, "6/f7/o6G6rQVuXOUnjqkPA== 3W7K+AlS5fiP/fYNoxrqvg==");
+                                //Log.v("encryptAES", encryptAES);
+                                String encrypt_secret_key = userRSA.encryptWithServerPublicKey(strKey, RequestData.SERVER_PUBLIC_KEY);
+                                //Log.v("encrypt_secret_key", encrypt_secret_key);
+
+                                data_serv.sendData("6/f7/o6G6rQVuXOUnjqkPA== 3W7K+AlS5fiP/fYNoxrqvg==");
+                            }catch (Exception e){}
+                            */
+
+
+                            } else if (jumpTime == 500) {
+                            /*
+                            //AES
+                            try {
+                                UserAesCryptography userAES = new UserAesCryptography();
+                                SecretKey secret = userAES.generateKey();
+                                String strKey = userAES.convertSecretKeyToString(secret);
+                                Log.v("SPLASH SECRETKEY", strKey);
+                                String encryptAES = userAES.encryptMessage(secret, "sOKdmpz0Y2Bw3Cc9qiHG1g== A9v82WQh0oUJHBGZZ06vhQ==");
+                                Log.v("SPLASH ENCRYPT", encryptAES);
+                                String decryptAES = userAES.decryptMessages(strKey, encryptAES);
+                                Log.v("SPLASH DECRYPT", decryptAES);
+
+                            }catch (Exception e){}
+                            */
+
+                            /*
+                            //RSA
+                            try {
+                                UserRsaCryptography userRSA= new UserRsaCryptography();
+                                //userRSA.clearPreferences(getApplicationContext());
+                                //userRSA.generateKeyPair();
+                                String pub_key = userRSA.getPublicKey(getApplicationContext());
+                                String pri_key = userRSA.getPrivateKey(getApplicationContext());
+                                //ex. server msg decrypt using cp_pri_key
+                                String decrypt_msg = userRSA.decryptWithPrivateKey(getApplicationContext(),"Wl3BL2CVcKeUzQnGDx9AvrHwfVEFgg8uXQ3LIGX+GoWWduvRJ8/IpI4jK9fgbvB5LsutzowEfZdTmxQRBT4fdwxu8WcUEv4RdXF1TIdAcJ5Q8SXS0P2r/bSRQSk8KdLSmCaFouHkT8RRfP2bHcsZwlH87VK692LHg2E9Zj+zhyE=");
+                                Log.v("SPLASH RSA SERVER MSG", decrypt_msg);
+                                //ex. phone msg encrypt using ser_pub_key
+                                String str = "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCfG/Jn5Vwio/7tT/jer7q6pezq<break/>BEnhgPTgTgL/ggGDf96LviQxQ2zJhYVGfsc4tO2oL+o5qHeGfM/VjXR0lBnI9s4v<break/>1tGj6DCYgCHxdWQ6L49iBr0P2IVmXYibrnu50oEyeJfgw1HOt5IVKNsYI2U/UBmH<break/>CrIyufgQQeai3Qi98QIDAQAB<break/>";
+                                str= str.replace("<break/>"," ");
+                                String encrypt_msg = userRSA.encryptWithServerPublicKey("angeli.borga@yahoo.com",str);
+                                Log.v("SPLASH RSA CP ENCRYPT", encrypt_msg);
+                            }catch (Exception e){}
+                            */
+
+                                //Final code Exchange Public Key Pairs
+                            /* */
+                                try {
+                                    UserRsaCryptography userRSA = new UserRsaCryptography();
+                                    userRSA.clearPreferences(getApplicationContext());
+                                    userRSA.generateKeyPair();
+                                    String pub_key = userRSA.getPublicKey(getApplicationContext());
+
+                                    DataService data_serv = new DataService();
+                                    data_serv.getPublicKey(pub_key);
+                                } catch (Exception e) {
+                                }
+
+                            }
                     }
                 }
                 );
@@ -105,6 +187,8 @@ public class SplashActivity extends AppCompatActivity implements OnProgressBarLi
                 public void onFinish()
                 {
                     timer.cancel();
+                    //connectUser();
+
                 }
 
         }, 100, 100);
@@ -143,25 +227,23 @@ public class SplashActivity extends AppCompatActivity implements OnProgressBarLi
 
     public void display()
     {
-
-            //RequestData.storedEmail = loginDataBaseAdapter.getUserEmail();
-            if (RequestData.storedEmail.isEmpty()==false) {
-                connectUser();
-            } else {
-                RequestData.user_Registered = "false";
-                Intent i = new Intent(SplashActivity.this, homescreen.class);
-                SplashActivity.this.startActivityForResult(i, 1);
-                onBackPressed();
-            }
+        if (RequestData.storedEmail.isEmpty() == false) {
+            connectUser();
+        } else {
+            RequestData.user_Registered = "false";
+            Intent i = new Intent(SplashActivity.this, homescreen.class);
+            SplashActivity.this.startActivityForResult(i, 1);
+            onBackPressed();
+        }
     }
     // code inserted start
     private void connectUser(){
         class conUser extends AsyncTask<Void,Void,String> {
-            //ProgressDialog loading;
+            ProgressDialog loading;
             @Override
             protected void onPreExecute() {
                 super.onPreExecute();
-                //loading = ProgressDialog.show(SplashActivity.this,"Connecting...","Wait...",true,false);
+                //loading = ProgressDialog.show(SplashActivity.this, "Connecting...", "Wait...", true, false);
             }
             @Override
             protected void onPostExecute(String s) {
@@ -192,8 +274,9 @@ public class SplashActivity extends AppCompatActivity implements OnProgressBarLi
             {
                 RequestData.user_Registered = "true";
                 RequestData.getToken = jsonObject.getString(RequestData.TAG_Token);
-                //Log.v(TAG, "jsonObject: "+ msg +" "+RequestData.getToken);
+                Log.v(TAG, "jsonObject: " + msg + " " + RequestData.getToken);
                 Intent i = new Intent(SplashActivity.this, homescreen.class);
+
                 SplashActivity.this.startActivityForResult(i, 1);
                 onBackPressed();
             }
@@ -201,6 +284,7 @@ public class SplashActivity extends AppCompatActivity implements OnProgressBarLi
             {
                 RequestData.user_Registered = "false";
                 Intent i = new Intent(SplashActivity.this, homescreen.class);
+
                 SplashActivity.this.startActivityForResult(i, 1);
                 onBackPressed();
             }

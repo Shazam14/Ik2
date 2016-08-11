@@ -1,131 +1,116 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#DBE3E3"
-    app:layout_behavior="@string/appbar_scrolling_view_behavior"
-    tools:context="com.ikode.viezara.ikode.SplashActivity"
-    >
+    android:paddingLeft="8dp"
+    android:paddingRight="8dp"
+    android:paddingBottom="8dp"
+    android:paddingTop="8dp"
+    android:orientation="vertical"
+    tools:context="ikona.ikode.MainActivity">
 
-
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:id="@+id/relativeLayout6">
+        android:layout_weight="0.5"
+        android:elevation="4dp"
+        android:orientation="vertical"
+
+        android:layout_gravity="center_vertical">
 
         <ImageView
-            android:id="@+id/imageView15"
-            android:layout_marginTop="30dp"
-            android:layout_width="300dp"
-            android:layout_height="300dp"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true"
-            android:background="@drawable/ic_globeikode" />
-
-
-        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:id="@+id/iklsplashTxt"
-            android:textSize="18sp"
-            android:layout_below="@+id/imageView15"
-            android:layout_centerHorizontal="true" />
+            android:id="@+id/imageView"
+            android:background="@drawable/ic_ikodeglobe"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="Ikode Icon" />
 
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/relativeLayoutTextWords"
-        android:layout_below="@+id/relativeLayout6"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="234dp"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true">
-
-        <TextView
+        <com.devspark.robototextview.widget.RobotoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="#SayNoToFraud"
-            android:typeface="sans"
-            android:textStyle="bold|italic"
-            android:textSize="54sp"
-            android:textColor="@color/colorPrimaryDark"
-            android:id="@+id/textView45"
-            android:layout_centerHorizontal="true" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="Remember :"
-            android:typeface="sans"
-            android:textSize="44sp"
-            android:textStyle="bold|italic"
-            android:id="@+id/textView46"
-            android:layout_marginTop="41dp"
-            android:layout_below="@+id/textView45"
-            android:layout_alignLeft="@+id/textView47"
-            android:layout_alignStart="@+id/textView47" />
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="&quot;if something sounds too good \n to be true, it is most likely is&quot;."
-            android:id="@+id/textView47"
-            android:textSize="44sp"
-            android:textStyle="italic"
-            android:layout_below="@+id/textView46"
-            android:layout_centerHorizontal="true" />
-
-
-        <!--<ProgressBar
-            android:id="@+id/progressBar"
-            style="?android:attr/progressBarStyleHorizontal"
-            android:layout_width="300dp"
-            android:layout_height="20dp"
-            android:layout_alignParentBottom="true"
-            android:layout_centerHorizontal="true"
-            android:indeterminate="false" />-->
-
-
-    </RelativeLayout>
-
-    <RelativeLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/relativeLayout5"
-        android:layout_below="@+id/relativeLayoutTextWords"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="129dp">
-
-        <TextView
-            android:id="@+id/textView"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="● Initializing the IkodeSC Reader. This may take a few seconds."
-            android:textAppearance="?android:attr/textAppearanceSmall"
+            app:typeface="roboto_medium_italic"
+            android:text="licensed by Ikona ®"
+            android:layout_gravity="center_horizontal"
+            android:textStyle="bold"
             android:textSize="24sp"
-            android:typeface="sans"
-            android:layout_centerHorizontal="true"
-            android:layout_marginTop="58dp" />
+            android:id="@+id/iklsplashTxt"
+
+            />
+
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="wrap_content"
+        android:layout_height="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="16dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="16dp"
+        android:layout_weight="2"
+        android:elevation="4dp"
+        android:layout_gravity="center_horizontal">
+
+
+        <com.devspark.robototextview.widget.RobotoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_black_italic"
+            android:gravity="center"
+            android:layout_gravity="center_horizontal"
+            android:text="#SayNoToFraud"
+            android:layout_weight="1"
+            android:textSize="45sp" />
+
+        <com.devspark.robototextview.widget.RobotoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:typeface="roboto_mono_medium_italic"
+            android:text="Remember:"
+            android:gravity="left"
+            android:layout_weight="0"
+            android:textSize="34sp" />
+
+        <com.devspark.robototextview.widget.RobotoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            app:typeface="roboto_light_italic"
+            android:text="@string/ifsome"
+            android:layout_weight="0"
+            android:textSize="34sp" />
+
 
         <com.ikode.viezara.ikode.NumberProgressBar
-            android:layout_width="700dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_weight="0.5"
             style="@style/NumberProgressBar_Default"
-            android:id="@+id/numberbar1"
-            android:layout_centerVertical="true"
-            android:layout_centerHorizontal="true" />
+            android:id="@+id/numberbar1" />
 
-    </RelativeLayout>
+        <com.devspark.robototextview.widget.RobotoTextView xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            app:typeface="roboto_light"
+            android:gravity="center"
+            android:text="Initialisizing the Ikode SC Reader. This may take a few seconds"
+            android:layout_weight="0"
+            android:textSize="24sp" />
+    </LinearLayout>
 
 
-</RelativeLayout>
+</LinearLayout>
